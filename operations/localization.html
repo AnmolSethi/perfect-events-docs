@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Localization &amp; Adding a Language — PerfectEvents Documentation</title>
+<meta name="description" content="Two separate systems — UI chrome strings, and per-event content translation.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="icon" type="image/png" href="../assets/mark.png">
+<link rel="stylesheet" href="../assets/docs.css">
+
+</head>
+<body data-root="..">
+<header class="docs-topbar">
+  <button class="docs-menu-toggle" type="button" aria-label="Toggle navigation">&#9776;</button>
+  <a class="docs-brand" href="../index.html"><img src="../assets/mark.png" alt="" width="28" height="28"><span class="eyebrow">PerfectEvents</span>Documentation</a>
+  <div class="docs-search">
+    <input type="search" placeholder="Search the docs…" autocomplete="off" aria-label="Search documentation">
+    <div class="docs-search-results"></div>
+  </div>
+</header>
+<div class="docs-shell">
+  <nav class="docs-sidebar"><div class="docs-sidebar-group"><h3>Getting Started</h3><ul><li><a class="nav-link" href="../getting-started/overview.html">Overview</a></li><li><a class="nav-link" href="../getting-started/server-requirements.html">Server Requirements</a></li><li><a class="nav-link" href="../getting-started/whats-in-the-box.html">What&#039;s in the Box</a></li><li><a class="nav-link" href="../getting-started/admin-vs-rebuild-boundary.html">Admin vs. Rebuild</a></li></ul></div><div class="docs-sidebar-group"><h3>Installation</h3><ul><li><a class="nav-link" href="../installation/wizard-walkthrough.html">Installation Wizard Walkthrough</a></li><li><a class="nav-link" href="../installation/cpanel.html">Installing on cPanel / Shared Hosting</a></li><li><a class="nav-link" href="../installation/vps.html">Installing on a VPS</a></li><li><a class="nav-link" href="../installation/subdirectory-install.html">Installing in a Subdirectory</a></li><li><a class="nav-link" href="../installation/troubleshooting-installer.html">Troubleshooting the Installer</a></li><li><a class="nav-link" href="../installation/post-install-security-checklist.html">Post-Install Security Checklist</a></li></ul></div><div class="docs-sidebar-group"><h3>Configuration</h3><ul><li><a class="nav-link" href="../configuration/environment-variables.html">Environment Variables</a></li><li><a class="nav-link" href="../configuration/cron-and-queues.html">Cron &amp; Queue Workers</a></li><li><a class="nav-link" href="../configuration/storage-and-s3.html">Storage &amp; S3</a></li><li><a class="nav-link" href="../configuration/cache.html">Cache</a></li><li><a class="nav-link" href="../configuration/https.html">HTTPS</a></li></ul></div><div class="docs-sidebar-group"><h3>Integrations</h3><ul><li><a class="nav-link" href="../integrations/stripe.html">Stripe</a></li><li><a class="nav-link" href="../integrations/paypal.html">PayPal</a></li><li><a class="nav-link" href="../integrations/razorpay.html">Razorpay</a></li><li><a class="nav-link" href="../integrations/paystack.html">Paystack</a></li><li><a class="nav-link" href="../integrations/email-smtp.html">Email (SMTP)</a></li><li><a class="nav-link" href="../integrations/sms.html">SMS (Twilio)</a></li><li><a class="nav-link" href="../integrations/social-login.html">Social Login</a></li><li><a class="nav-link" href="../integrations/firebase-and-push.html">Firebase &amp; Push Notifications</a></li></ul></div><div class="docs-sidebar-group"><h3>Operations</h3><ul><li><a class="nav-link" href="../operations/admin-tour.html">Admin Panel Tour</a></li><li><a class="nav-link" href="../operations/organizer-tour.html">Organizer Panel Tour</a></li><li><a class="nav-link" href="../operations/approvals.html">Approvals</a></li><li><a class="nav-link" href="../operations/refunds.html">Refunds</a></li><li><a class="nav-link" href="../operations/payouts.html">Payouts</a></li><li><a class="nav-link" href="../operations/coupons.html">Coupons</a></li><li><a class="nav-link" href="../operations/cms-and-homepage.html">CMS &amp; Homepage</a></li><li><a class="nav-link" href="../operations/notification-templates.html">Notification Templates</a></li><li><a class="nav-link is-active" href="../operations/localization.html">Localization &amp; Adding a Language</a></li><li><a class="nav-link" href="../operations/backups.html">Backups</a></li><li><a class="nav-link" href="../operations/multi-country-and-currency.html">Multi-Country &amp; Multi-Currency</a></li><li><a class="nav-link" href="../operations/modules.html">Modules</a></li><li><a class="nav-link" href="../operations/maps-and-venue-locations.html">Maps &amp; Venue Locations</a></li><li><a class="nav-link" href="../operations/door-check-in.html">Door Check-in &amp; Offline Use</a></li></ul></div><div class="docs-sidebar-group"><h3>Mobile Apps</h3><ul><li><a class="nav-link" href="../mobile-apps/toolchain-setup.html">Toolchain Setup</a></li><li><a class="nav-link" href="../mobile-apps/project-structure.html">Project Structure</a></li><li><a class="nav-link" href="../mobile-apps/config-files.html">Config Files</a></li><li><a class="nav-link" href="../mobile-apps/rebranding-the-apps.html">Rebranding the Apps</a></li><li><a class="nav-link" href="../mobile-apps/admin-configurable-vs-rebuild.html">Admin-Configurable vs. Rebuild</a></li><li><a class="nav-link" href="../mobile-apps/building-android.html">Building Android (AAB)</a></li><li><a class="nav-link" href="../mobile-apps/building-ios.html">Building iOS (IPA)</a></li><li><a class="nav-link" href="../mobile-apps/play-store-submission.html">Play Store Submission</a></li><li><a class="nav-link" href="../mobile-apps/app-store-submission.html">App Store Submission</a></li><li><a class="nav-link" href="../mobile-apps/common-rejections.html">Common Rejections</a></li></ul></div><div class="docs-sidebar-group"><h3>Maintenance</h3><ul><li><a class="nav-link" href="../maintenance/updating-the-product.html">Updating the Product</a></li><li><a class="nav-link" href="../maintenance/changelog.html">Reading the Changelog</a></li><li><a class="nav-link" href="../maintenance/backup-restore.html">Backup &amp; Restore Around an Update</a></li><li><a class="nav-link" href="../maintenance/preserving-customizations.html">Preserving Customizations</a></li></ul></div><div class="docs-sidebar-group"><h3>Reference</h3><ul><li><a class="nav-link" href="../reference/api-overview.html">API Overview</a></li><li><a class="nav-link" href="../reference/settings-reference.html">Settings Reference</a></li><li><a class="nav-link" href="../reference/permissions-matrix.html">Permissions Matrix</a></li><li><a class="nav-link" href="../reference/troubleshooting-index.html">Troubleshooting Index</a></li><li><a class="nav-link" href="../reference/faq.html">FAQ</a></li><li><a class="nav-link" href="../reference/credits.html">Credits &amp;amp; Licenses</a></li></ul></div></nav>
+  <main class="docs-main"><p class="docs-breadcrumb"><a href="../index.html">Documentation</a> / Operations</p><article class="docs-content"><h1>Localization &amp; Adding a Language</h1><p class="docs-dek">Two separate systems — UI chrome strings, and per-event content translation.</p><p>There are two different kinds of "translation" in this product, handled two different ways.</p>
+
+<h2 id="1-ui-chrome-admin-organizer-panel-and-site-labels">1. UI chrome — admin/organizer panel and site labels</h2>
+<p>Buttons, labels, error messages — the fixed text around the product, not content an organizer
+wrote. This is what Admin → Languages and Admin → Translations manage.</p>
+
+<h3 id="add-a-language">Add a language</h3>
+<p>Admin → Languages → Add: enter a code (e.g. <code>fr</code>), display name, native name, whether
+it's right-to-left, and whether it's active. English is seeded by default and can't be deactivated
+or deleted. Only one language can be the default at a time — setting a new default reassigns it and
+activates that language automatically.</p>
+
+<h3 id="translate-it">Translate it</h3>
+<p>Admin → Translations → pick the language → you'll see every UI string in the product next to its
+English default, with an editable box. Save a value to override it for that language; clear it back
+to empty to fall back to the English default again — there's no "half-translated" broken state,
+every untranslated string just shows English until you fill it in.</p>
+
+<h3 id="export-import">Export / import</h3>
+<p>Translations can be exported as JSON (the full effective set — your overrides plus English
+defaults for anything untranslated) and re-imported, so translation work can be done offline or
+handed to a translator and brought back in. Import validates every key against the known key
+catalog and ignores anything it doesn't recognize, so a malformed file can't corrupt the table.</p>
+
+<h2 id="2-event-organizer-content-per-locale-fields-on-the-content-itself">2. Event/organizer content — per-locale fields on the content itself</h2>
+<p>Event titles and descriptions, FAQ answers, category names, and organizer bios are translated
+separately, directly on each model, editable per-locale right in that item's own editor (the event
+editor, the category editor, etc.) — not through the Translations screen. If you haven't entered a
+translation for a given locale, that content falls back to whichever locale it does have.</p>
+
+<div class="callout callout-note">
+<span class="callout-title">Mobile apps use bundled translations, not live ones</span>
+The customer and scanner apps ship their own translation files built into the app — they don't
+fetch UI strings from the server at runtime. Changing a translation in Admin → Translations affects
+the website and panels immediately; it does not affect the mobile apps until their own translation
+files are updated and the app is rebuilt.
+</div></article><nav class="docs-pagenav"><a class="prev" href="../operations/notification-templates.html"><span class="dir">&larr; Previous</span>Notification Templates</a><a class="next" href="../operations/backups.html"><span class="dir">Next &rarr;</span>Backups</a></nav></main>
+  <nav class="docs-toc"><h3>On this page</h3><ul><li><a href="#1-ui-chrome-admin-organizer-panel-and-site-labels">1. UI chrome — admin/organizer panel and site labels</a></li><li><a href="#2-event-organizer-content-per-locale-fields-on-the-content-itself">2. Event/organizer content — per-locale fields on the content itself</a></li></ul></nav>
+</div>
+<script src="../assets/docs.js"></script>
+</body>
+</html>

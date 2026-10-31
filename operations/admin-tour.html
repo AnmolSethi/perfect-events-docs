@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin Panel Tour — PerfectEvents Documentation</title>
+<meta name="description" content="Where everything lives, for a super-admin logging in for the first time.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="icon" type="image/png" href="../assets/mark.png">
+<link rel="stylesheet" href="../assets/docs.css">
+
+</head>
+<body data-root="..">
+<header class="docs-topbar">
+  <button class="docs-menu-toggle" type="button" aria-label="Toggle navigation">&#9776;</button>
+  <a class="docs-brand" href="../index.html"><img src="../assets/mark.png" alt="" width="28" height="28"><span class="eyebrow">PerfectEvents</span>Documentation</a>
+  <div class="docs-search">
+    <input type="search" placeholder="Search the docs…" autocomplete="off" aria-label="Search documentation">
+    <div class="docs-search-results"></div>
+  </div>
+</header>
+<div class="docs-shell">
+  <nav class="docs-sidebar"><div class="docs-sidebar-group"><h3>Getting Started</h3><ul><li><a class="nav-link" href="../getting-started/overview.html">Overview</a></li><li><a class="nav-link" href="../getting-started/server-requirements.html">Server Requirements</a></li><li><a class="nav-link" href="../getting-started/whats-in-the-box.html">What&#039;s in the Box</a></li><li><a class="nav-link" href="../getting-started/admin-vs-rebuild-boundary.html">Admin vs. Rebuild</a></li></ul></div><div class="docs-sidebar-group"><h3>Installation</h3><ul><li><a class="nav-link" href="../installation/wizard-walkthrough.html">Installation Wizard Walkthrough</a></li><li><a class="nav-link" href="../installation/cpanel.html">Installing on cPanel / Shared Hosting</a></li><li><a class="nav-link" href="../installation/vps.html">Installing on a VPS</a></li><li><a class="nav-link" href="../installation/subdirectory-install.html">Installing in a Subdirectory</a></li><li><a class="nav-link" href="../installation/troubleshooting-installer.html">Troubleshooting the Installer</a></li><li><a class="nav-link" href="../installation/post-install-security-checklist.html">Post-Install Security Checklist</a></li></ul></div><div class="docs-sidebar-group"><h3>Configuration</h3><ul><li><a class="nav-link" href="../configuration/environment-variables.html">Environment Variables</a></li><li><a class="nav-link" href="../configuration/cron-and-queues.html">Cron &amp; Queue Workers</a></li><li><a class="nav-link" href="../configuration/storage-and-s3.html">Storage &amp; S3</a></li><li><a class="nav-link" href="../configuration/cache.html">Cache</a></li><li><a class="nav-link" href="../configuration/https.html">HTTPS</a></li></ul></div><div class="docs-sidebar-group"><h3>Integrations</h3><ul><li><a class="nav-link" href="../integrations/stripe.html">Stripe</a></li><li><a class="nav-link" href="../integrations/paypal.html">PayPal</a></li><li><a class="nav-link" href="../integrations/razorpay.html">Razorpay</a></li><li><a class="nav-link" href="../integrations/paystack.html">Paystack</a></li><li><a class="nav-link" href="../integrations/email-smtp.html">Email (SMTP)</a></li><li><a class="nav-link" href="../integrations/sms.html">SMS (Twilio)</a></li><li><a class="nav-link" href="../integrations/social-login.html">Social Login</a></li><li><a class="nav-link" href="../integrations/firebase-and-push.html">Firebase &amp; Push Notifications</a></li></ul></div><div class="docs-sidebar-group"><h3>Operations</h3><ul><li><a class="nav-link is-active" href="../operations/admin-tour.html">Admin Panel Tour</a></li><li><a class="nav-link" href="../operations/organizer-tour.html">Organizer Panel Tour</a></li><li><a class="nav-link" href="../operations/approvals.html">Approvals</a></li><li><a class="nav-link" href="../operations/refunds.html">Refunds</a></li><li><a class="nav-link" href="../operations/payouts.html">Payouts</a></li><li><a class="nav-link" href="../operations/coupons.html">Coupons</a></li><li><a class="nav-link" href="../operations/cms-and-homepage.html">CMS &amp; Homepage</a></li><li><a class="nav-link" href="../operations/notification-templates.html">Notification Templates</a></li><li><a class="nav-link" href="../operations/localization.html">Localization &amp; Adding a Language</a></li><li><a class="nav-link" href="../operations/backups.html">Backups</a></li><li><a class="nav-link" href="../operations/multi-country-and-currency.html">Multi-Country &amp; Multi-Currency</a></li><li><a class="nav-link" href="../operations/modules.html">Modules</a></li><li><a class="nav-link" href="../operations/maps-and-venue-locations.html">Maps &amp; Venue Locations</a></li><li><a class="nav-link" href="../operations/door-check-in.html">Door Check-in &amp; Offline Use</a></li></ul></div><div class="docs-sidebar-group"><h3>Mobile Apps</h3><ul><li><a class="nav-link" href="../mobile-apps/toolchain-setup.html">Toolchain Setup</a></li><li><a class="nav-link" href="../mobile-apps/project-structure.html">Project Structure</a></li><li><a class="nav-link" href="../mobile-apps/config-files.html">Config Files</a></li><li><a class="nav-link" href="../mobile-apps/rebranding-the-apps.html">Rebranding the Apps</a></li><li><a class="nav-link" href="../mobile-apps/admin-configurable-vs-rebuild.html">Admin-Configurable vs. Rebuild</a></li><li><a class="nav-link" href="../mobile-apps/building-android.html">Building Android (AAB)</a></li><li><a class="nav-link" href="../mobile-apps/building-ios.html">Building iOS (IPA)</a></li><li><a class="nav-link" href="../mobile-apps/play-store-submission.html">Play Store Submission</a></li><li><a class="nav-link" href="../mobile-apps/app-store-submission.html">App Store Submission</a></li><li><a class="nav-link" href="../mobile-apps/common-rejections.html">Common Rejections</a></li></ul></div><div class="docs-sidebar-group"><h3>Maintenance</h3><ul><li><a class="nav-link" href="../maintenance/updating-the-product.html">Updating the Product</a></li><li><a class="nav-link" href="../maintenance/changelog.html">Reading the Changelog</a></li><li><a class="nav-link" href="../maintenance/backup-restore.html">Backup &amp; Restore Around an Update</a></li><li><a class="nav-link" href="../maintenance/preserving-customizations.html">Preserving Customizations</a></li></ul></div><div class="docs-sidebar-group"><h3>Reference</h3><ul><li><a class="nav-link" href="../reference/api-overview.html">API Overview</a></li><li><a class="nav-link" href="../reference/settings-reference.html">Settings Reference</a></li><li><a class="nav-link" href="../reference/permissions-matrix.html">Permissions Matrix</a></li><li><a class="nav-link" href="../reference/troubleshooting-index.html">Troubleshooting Index</a></li><li><a class="nav-link" href="../reference/faq.html">FAQ</a></li><li><a class="nav-link" href="../reference/credits.html">Credits &amp;amp; Licenses</a></li></ul></div></nav>
+  <main class="docs-main"><p class="docs-breadcrumb"><a href="../index.html">Documentation</a> / Operations</p><article class="docs-content"><h1>Admin Panel Tour</h1><p class="docs-dek">Where everything lives, for a super-admin logging in for the first time.</p><p>The Admin panel (<code>/admin</code>) is for the platform owner — settings, moderation, and
+oversight across every organizer. It's a separate area from the Organizer panel; an admin account
+can see everything, an organizer only their own.</p>
+
+<h2 id="overview">Overview</h2>
+<p>The first screen after login shows how the whole platform is doing. Pick a period (last 7, 30 or
+90 days, or 12 months) at the top right; every figure and chart follows it.</p>
+<ul>
+<li><strong>Headline numbers</strong>: gross sales, platform fees, paid orders, tickets sold, and
+attendance (the share of tickets checked in at events held in the period). Each shows the change
+against the previous period of the same length, plus a small trend line.</li>
+<li><strong>Sales trend</strong>: gross sales and platform fees over the period.</li>
+<li><strong>Needs attention</strong>: anything waiting on you, such as events and organizer
+applications to approve, reviews to moderate, failed background jobs, a scheduler (cron) that isn't
+running, oversold orders, or mail and storage settings you haven't configured yet.</li>
+<li><strong>Upcoming events</strong> with how full each one is, and <strong>top events</strong> by
+gross sales.</li>
+<li><strong>Tickets by category</strong>, <strong>where the money goes</strong> (how gross sales
+split into the organizers' share, platform fees, and tax added at checkout), and <strong>recent
+activity</strong> (orders, new events, sign-ups).</li>
+</ul>
+<p><strong>Multiple currencies:</strong> PerfectEvents never converts between currencies, so money
+figures show one currency at a time. When you've sold in more than one, a currency switcher appears
+next to the period picker; it lists only currencies with sales and starts on your default currency.
+Order, ticket and attendance counts always include every currency.</p>
+
+<figure><img src="../assets/screens/admin-overview.webp" alt="Admin overview" width="1280" height="860" loading="lazy"></figure>
+
+<h2 id="events">Events</h2>
+<p>Every event across every organizer. This is where <a href="../operations/approvals.html">event
+approvals</a> happen — a newly submitted event sits as "Pending" here until you approve or send it
+back with a note.</p>
+
+<h2 id="organizers">Organizers</h2>
+<p>Every organizer account, and where the <em>other</em> approval layer lives — reviewing a new
+organizer's application and approving, rejecting, or later suspending them. See
+<a href="../operations/approvals.html">Approvals</a> for how this differs from event approval.</p>
+
+<h2 id="users">Users</h2>
+<p>Every account on the platform (customers, organizers, admins) — search, view, and manage
+individual accounts.</p>
+
+<h2 id="reviews">Reviews</h2>
+<p>Moderate buyer reviews left on events, if auto-approval is off (General settings).</p>
+
+<h2 id="orders-refunds-payouts">Orders, Refunds, Payouts</h2>
+<p>Orders lists every order platform-wide with the ability to drill into one and issue a
+<a href="../operations/refunds.html">refund</a>. Payouts is where organizer
+<a href="../operations/payouts.html">payout requests</a> queue up for you to mark paid or reject.</p>
+
+<h2 id="coupons">Coupons</h2>
+<p>Platform-level coupon management, alongside whatever coupons individual organizers create for
+their own events — see <a href="../operations/coupons.html">Coupons</a>.</p>
+
+<h2 id="roles-permissions">Roles &amp; permissions</h2>
+<p>Toggle which of the wireable permissions (event approval, settings management, payout approval,
+plus what organizers/staff can do) are granted to each role. See the
+<a href="../reference/permissions-matrix.html">permissions matrix</a> for the full picture.</p>
+
+<h2 id="cms-pages-faq-banners-homepage-menus">CMS: Pages, FAQ, Banners, Homepage, Menus</h2>
+<p>Static content pages, an FAQ list, promotional banners, the homepage's section layout, and
+header/footer menu items — see <a href="../operations/cms-and-homepage.html">CMS &amp;
+homepage</a>.</p>
+
+<h2 id="categories-venues-currencies-countries">Categories, Venues, Currencies, Countries</h2>
+<p>Reference data used throughout the platform: event categories, reusable venues, which currencies
+are active, and which countries are selectable in forms.</p>
+
+<h2 id="notification-templates">Notification templates</h2>
+<p>Edit the copy sent for each notification type — see
+<a href="../operations/notification-templates.html">Notification templates</a>.</p>
+
+<h2 id="languages-translations">Languages &amp; Translations</h2>
+<p>Add a language and translate UI chrome strings — see
+<a href="../operations/localization.html">Localization</a>.</p>
+
+<h2 id="settings">Settings</h2>
+<p>Branding, general/tax/payout defaults, mail, storage, payment gateways, SMS, social login, and
+SEO — every buyer-configurable knob in the product lives here. Full list in the
+<a href="../reference/settings-reference.html">settings reference</a>.</p>
+
+<figure><img src="../assets/screens/admin-settings-general.webp" alt="Admin general settings" width="1280" height="860" loading="lazy"></figure>
+<figure><img src="../assets/screens/admin-settings-branding.webp" alt="Admin branding settings" width="1280" height="860" loading="lazy"><figcaption>Settings → Branding: your logo, favicon and colours.</figcaption></figure>
+
+<h2 id="system">System</h2>
+<p>A read-only operations page: PHP/Laravel versions and the same requirement checklist the
+installer used, queue health (pending/failed job counts, last 5 failures), whether cron is actually
+running (a heartbeat timestamp), disk usage, and a tail of recent error-level log lines. Also has a
+"clear cache" button and the maintenance-mode toggle — turning maintenance mode on takes the public
+site offline while leaving the Admin panel itself reachable, so you can fix something without
+locking yourself out.</p></article><nav class="docs-pagenav"><a class="prev" href="../integrations/firebase-and-push.html"><span class="dir">&larr; Previous</span>Firebase &amp; Push Notifications</a><a class="next" href="../operations/organizer-tour.html"><span class="dir">Next &rarr;</span>Organizer Panel Tour</a></nav></main>
+  <nav class="docs-toc"><h3>On this page</h3><ul><li><a href="#overview">Overview</a></li><li><a href="#events">Events</a></li><li><a href="#organizers">Organizers</a></li><li><a href="#users">Users</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#orders-refunds-payouts">Orders, Refunds, Payouts</a></li><li><a href="#coupons">Coupons</a></li><li><a href="#roles-permissions">Roles &amp; permissions</a></li><li><a href="#cms-pages-faq-banners-homepage-menus">CMS: Pages, FAQ, Banners, Homepage, Menus</a></li><li><a href="#categories-venues-currencies-countries">Categories, Venues, Currencies, Countries</a></li><li><a href="#notification-templates">Notification templates</a></li><li><a href="#languages-translations">Languages &amp; Translations</a></li><li><a href="#settings">Settings</a></li><li><a href="#system">System</a></li></ul></nav>
+</div>
+<script src="../assets/docs.js"></script>
+</body>
+</html>

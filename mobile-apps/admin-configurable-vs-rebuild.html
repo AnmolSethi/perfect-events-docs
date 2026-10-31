@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin-Configurable vs. Rebuild — PerfectEvents Documentation</title>
+<meta name="description" content="The exact line between what changes instantly and what needs a new build, for the mobile apps.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="icon" type="image/png" href="../assets/mark.png">
+<link rel="stylesheet" href="../assets/docs.css">
+
+</head>
+<body data-root="..">
+<header class="docs-topbar">
+  <button class="docs-menu-toggle" type="button" aria-label="Toggle navigation">&#9776;</button>
+  <a class="docs-brand" href="../index.html"><img src="../assets/mark.png" alt="" width="28" height="28"><span class="eyebrow">PerfectEvents</span>Documentation</a>
+  <div class="docs-search">
+    <input type="search" placeholder="Search the docs…" autocomplete="off" aria-label="Search documentation">
+    <div class="docs-search-results"></div>
+  </div>
+</header>
+<div class="docs-shell">
+  <nav class="docs-sidebar"><div class="docs-sidebar-group"><h3>Getting Started</h3><ul><li><a class="nav-link" href="../getting-started/overview.html">Overview</a></li><li><a class="nav-link" href="../getting-started/server-requirements.html">Server Requirements</a></li><li><a class="nav-link" href="../getting-started/whats-in-the-box.html">What&#039;s in the Box</a></li><li><a class="nav-link" href="../getting-started/admin-vs-rebuild-boundary.html">Admin vs. Rebuild</a></li></ul></div><div class="docs-sidebar-group"><h3>Installation</h3><ul><li><a class="nav-link" href="../installation/wizard-walkthrough.html">Installation Wizard Walkthrough</a></li><li><a class="nav-link" href="../installation/cpanel.html">Installing on cPanel / Shared Hosting</a></li><li><a class="nav-link" href="../installation/vps.html">Installing on a VPS</a></li><li><a class="nav-link" href="../installation/subdirectory-install.html">Installing in a Subdirectory</a></li><li><a class="nav-link" href="../installation/troubleshooting-installer.html">Troubleshooting the Installer</a></li><li><a class="nav-link" href="../installation/post-install-security-checklist.html">Post-Install Security Checklist</a></li></ul></div><div class="docs-sidebar-group"><h3>Configuration</h3><ul><li><a class="nav-link" href="../configuration/environment-variables.html">Environment Variables</a></li><li><a class="nav-link" href="../configuration/cron-and-queues.html">Cron &amp; Queue Workers</a></li><li><a class="nav-link" href="../configuration/storage-and-s3.html">Storage &amp; S3</a></li><li><a class="nav-link" href="../configuration/cache.html">Cache</a></li><li><a class="nav-link" href="../configuration/https.html">HTTPS</a></li></ul></div><div class="docs-sidebar-group"><h3>Integrations</h3><ul><li><a class="nav-link" href="../integrations/stripe.html">Stripe</a></li><li><a class="nav-link" href="../integrations/paypal.html">PayPal</a></li><li><a class="nav-link" href="../integrations/razorpay.html">Razorpay</a></li><li><a class="nav-link" href="../integrations/paystack.html">Paystack</a></li><li><a class="nav-link" href="../integrations/email-smtp.html">Email (SMTP)</a></li><li><a class="nav-link" href="../integrations/sms.html">SMS (Twilio)</a></li><li><a class="nav-link" href="../integrations/social-login.html">Social Login</a></li><li><a class="nav-link" href="../integrations/firebase-and-push.html">Firebase &amp; Push Notifications</a></li></ul></div><div class="docs-sidebar-group"><h3>Operations</h3><ul><li><a class="nav-link" href="../operations/admin-tour.html">Admin Panel Tour</a></li><li><a class="nav-link" href="../operations/organizer-tour.html">Organizer Panel Tour</a></li><li><a class="nav-link" href="../operations/approvals.html">Approvals</a></li><li><a class="nav-link" href="../operations/refunds.html">Refunds</a></li><li><a class="nav-link" href="../operations/payouts.html">Payouts</a></li><li><a class="nav-link" href="../operations/coupons.html">Coupons</a></li><li><a class="nav-link" href="../operations/cms-and-homepage.html">CMS &amp; Homepage</a></li><li><a class="nav-link" href="../operations/notification-templates.html">Notification Templates</a></li><li><a class="nav-link" href="../operations/localization.html">Localization &amp; Adding a Language</a></li><li><a class="nav-link" href="../operations/backups.html">Backups</a></li><li><a class="nav-link" href="../operations/multi-country-and-currency.html">Multi-Country &amp; Multi-Currency</a></li><li><a class="nav-link" href="../operations/modules.html">Modules</a></li><li><a class="nav-link" href="../operations/maps-and-venue-locations.html">Maps &amp; Venue Locations</a></li><li><a class="nav-link" href="../operations/door-check-in.html">Door Check-in &amp; Offline Use</a></li></ul></div><div class="docs-sidebar-group"><h3>Mobile Apps</h3><ul><li><a class="nav-link" href="../mobile-apps/toolchain-setup.html">Toolchain Setup</a></li><li><a class="nav-link" href="../mobile-apps/project-structure.html">Project Structure</a></li><li><a class="nav-link" href="../mobile-apps/config-files.html">Config Files</a></li><li><a class="nav-link" href="../mobile-apps/rebranding-the-apps.html">Rebranding the Apps</a></li><li><a class="nav-link is-active" href="../mobile-apps/admin-configurable-vs-rebuild.html">Admin-Configurable vs. Rebuild</a></li><li><a class="nav-link" href="../mobile-apps/building-android.html">Building Android (AAB)</a></li><li><a class="nav-link" href="../mobile-apps/building-ios.html">Building iOS (IPA)</a></li><li><a class="nav-link" href="../mobile-apps/play-store-submission.html">Play Store Submission</a></li><li><a class="nav-link" href="../mobile-apps/app-store-submission.html">App Store Submission</a></li><li><a class="nav-link" href="../mobile-apps/common-rejections.html">Common Rejections</a></li></ul></div><div class="docs-sidebar-group"><h3>Maintenance</h3><ul><li><a class="nav-link" href="../maintenance/updating-the-product.html">Updating the Product</a></li><li><a class="nav-link" href="../maintenance/changelog.html">Reading the Changelog</a></li><li><a class="nav-link" href="../maintenance/backup-restore.html">Backup &amp; Restore Around an Update</a></li><li><a class="nav-link" href="../maintenance/preserving-customizations.html">Preserving Customizations</a></li></ul></div><div class="docs-sidebar-group"><h3>Reference</h3><ul><li><a class="nav-link" href="../reference/api-overview.html">API Overview</a></li><li><a class="nav-link" href="../reference/settings-reference.html">Settings Reference</a></li><li><a class="nav-link" href="../reference/permissions-matrix.html">Permissions Matrix</a></li><li><a class="nav-link" href="../reference/troubleshooting-index.html">Troubleshooting Index</a></li><li><a class="nav-link" href="../reference/faq.html">FAQ</a></li><li><a class="nav-link" href="../reference/credits.html">Credits &amp;amp; Licenses</a></li></ul></div></nav>
+  <main class="docs-main"><p class="docs-breadcrumb"><a href="../index.html">Documentation</a> / Mobile Apps</p><article class="docs-content"><h1>Admin-Configurable vs. Rebuild</h1><p class="docs-dek">The exact line between what changes instantly and what needs a new build, for the mobile apps.</p><p>Both apps fetch <code>GET /api/v1/config</code> on launch (cached, with a bundled fallback for
+offline first-launch), so a lot of "branding" is live and instant — change it in Admin, and it's
+reflected the next time the app opens, no store update required.</p>
+<figure><img src="../assets/screens/admin-settings-app.webp" alt="Admin app settings" width="1280" height="860" loading="lazy"><figcaption>Admin → Settings → App: support contact and mobile app links.</figcaption></figure>
+
+
+<table>
+<tr><th><span class="badge badge-admin">Admin</span> — no rebuild</th><th><span class="badge badge-rebuild">Rebuild</span> — needs the kit and/or a new build</th></tr>
+<tr><td>App name shown inside the app, brand colors (light/dark), logo, support links</td><td>Store-listing display name, launcher/app icon, splash image + native splash color</td></tr>
+<tr><td>Enabled locales, translations, RTL</td><td>Bundled fonts</td></tr>
+<tr><td>Enabled payment gateways</td><td>Firebase project (<code>google-services.json</code> / <code>GoogleService-Info.plist</code>)</td></tr>
+<tr><td>Feature flags</td><td>API base URL (baked in via <code>--dart-define-from-file</code>)</td></tr>
+<tr><td></td><td>Android/iOS package id, native permission strings, deep-link / associated domains, signing</td></tr>
+</table>
+
+<div class="callout callout-tip">
+<span class="callout-title">If you only need the left column</span>
+You don't need the rebrand kit at all — just use Admin → Settings → Branding. The kit and a rebuild
+are only necessary if you're publishing your own store listing under your own identity (own icon,
+own package id) rather than using the apps as-shipped.
+</div>
+
+<p>See <a href="../mobile-apps/rebranding-the-apps.html">Rebranding the apps</a> for how to actually
+change the right-hand column, and <a href="../getting-started/admin-vs-rebuild-boundary.html">Admin
+vs. rebuild</a> for the same split as it applies to the website/panels rather than the apps.</p></article><nav class="docs-pagenav"><a class="prev" href="../mobile-apps/rebranding-the-apps.html"><span class="dir">&larr; Previous</span>Rebranding the Apps</a><a class="next" href="../mobile-apps/building-android.html"><span class="dir">Next &rarr;</span>Building Android (AAB)</a></nav></main>
+  
+</div>
+<script src="../assets/docs.js"></script>
+</body>
+</html>

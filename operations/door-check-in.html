@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Door Check-in &amp; Offline Use — PerfectEvents Documentation</title>
+<meta name="description" content="How door staff scan tickets with the Scanner app, what happens with no signal, and how buyers&#039; tickets work offline.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="icon" type="image/png" href="../assets/mark.png">
+<link rel="stylesheet" href="../assets/docs.css">
+
+</head>
+<body data-root="..">
+<header class="docs-topbar">
+  <button class="docs-menu-toggle" type="button" aria-label="Toggle navigation">&#9776;</button>
+  <a class="docs-brand" href="../index.html"><img src="../assets/mark.png" alt="" width="28" height="28"><span class="eyebrow">PerfectEvents</span>Documentation</a>
+  <div class="docs-search">
+    <input type="search" placeholder="Search the docs…" autocomplete="off" aria-label="Search documentation">
+    <div class="docs-search-results"></div>
+  </div>
+</header>
+<div class="docs-shell">
+  <nav class="docs-sidebar"><div class="docs-sidebar-group"><h3>Getting Started</h3><ul><li><a class="nav-link" href="../getting-started/overview.html">Overview</a></li><li><a class="nav-link" href="../getting-started/server-requirements.html">Server Requirements</a></li><li><a class="nav-link" href="../getting-started/whats-in-the-box.html">What&#039;s in the Box</a></li><li><a class="nav-link" href="../getting-started/admin-vs-rebuild-boundary.html">Admin vs. Rebuild</a></li></ul></div><div class="docs-sidebar-group"><h3>Installation</h3><ul><li><a class="nav-link" href="../installation/wizard-walkthrough.html">Installation Wizard Walkthrough</a></li><li><a class="nav-link" href="../installation/cpanel.html">Installing on cPanel / Shared Hosting</a></li><li><a class="nav-link" href="../installation/vps.html">Installing on a VPS</a></li><li><a class="nav-link" href="../installation/subdirectory-install.html">Installing in a Subdirectory</a></li><li><a class="nav-link" href="../installation/troubleshooting-installer.html">Troubleshooting the Installer</a></li><li><a class="nav-link" href="../installation/post-install-security-checklist.html">Post-Install Security Checklist</a></li></ul></div><div class="docs-sidebar-group"><h3>Configuration</h3><ul><li><a class="nav-link" href="../configuration/environment-variables.html">Environment Variables</a></li><li><a class="nav-link" href="../configuration/cron-and-queues.html">Cron &amp; Queue Workers</a></li><li><a class="nav-link" href="../configuration/storage-and-s3.html">Storage &amp; S3</a></li><li><a class="nav-link" href="../configuration/cache.html">Cache</a></li><li><a class="nav-link" href="../configuration/https.html">HTTPS</a></li></ul></div><div class="docs-sidebar-group"><h3>Integrations</h3><ul><li><a class="nav-link" href="../integrations/stripe.html">Stripe</a></li><li><a class="nav-link" href="../integrations/paypal.html">PayPal</a></li><li><a class="nav-link" href="../integrations/razorpay.html">Razorpay</a></li><li><a class="nav-link" href="../integrations/paystack.html">Paystack</a></li><li><a class="nav-link" href="../integrations/email-smtp.html">Email (SMTP)</a></li><li><a class="nav-link" href="../integrations/sms.html">SMS (Twilio)</a></li><li><a class="nav-link" href="../integrations/social-login.html">Social Login</a></li><li><a class="nav-link" href="../integrations/firebase-and-push.html">Firebase &amp; Push Notifications</a></li></ul></div><div class="docs-sidebar-group"><h3>Operations</h3><ul><li><a class="nav-link" href="../operations/admin-tour.html">Admin Panel Tour</a></li><li><a class="nav-link" href="../operations/organizer-tour.html">Organizer Panel Tour</a></li><li><a class="nav-link" href="../operations/approvals.html">Approvals</a></li><li><a class="nav-link" href="../operations/refunds.html">Refunds</a></li><li><a class="nav-link" href="../operations/payouts.html">Payouts</a></li><li><a class="nav-link" href="../operations/coupons.html">Coupons</a></li><li><a class="nav-link" href="../operations/cms-and-homepage.html">CMS &amp; Homepage</a></li><li><a class="nav-link" href="../operations/notification-templates.html">Notification Templates</a></li><li><a class="nav-link" href="../operations/localization.html">Localization &amp; Adding a Language</a></li><li><a class="nav-link" href="../operations/backups.html">Backups</a></li><li><a class="nav-link" href="../operations/multi-country-and-currency.html">Multi-Country &amp; Multi-Currency</a></li><li><a class="nav-link" href="../operations/modules.html">Modules</a></li><li><a class="nav-link" href="../operations/maps-and-venue-locations.html">Maps &amp; Venue Locations</a></li><li><a class="nav-link is-active" href="../operations/door-check-in.html">Door Check-in &amp; Offline Use</a></li></ul></div><div class="docs-sidebar-group"><h3>Mobile Apps</h3><ul><li><a class="nav-link" href="../mobile-apps/toolchain-setup.html">Toolchain Setup</a></li><li><a class="nav-link" href="../mobile-apps/project-structure.html">Project Structure</a></li><li><a class="nav-link" href="../mobile-apps/config-files.html">Config Files</a></li><li><a class="nav-link" href="../mobile-apps/rebranding-the-apps.html">Rebranding the Apps</a></li><li><a class="nav-link" href="../mobile-apps/admin-configurable-vs-rebuild.html">Admin-Configurable vs. Rebuild</a></li><li><a class="nav-link" href="../mobile-apps/building-android.html">Building Android (AAB)</a></li><li><a class="nav-link" href="../mobile-apps/building-ios.html">Building iOS (IPA)</a></li><li><a class="nav-link" href="../mobile-apps/play-store-submission.html">Play Store Submission</a></li><li><a class="nav-link" href="../mobile-apps/app-store-submission.html">App Store Submission</a></li><li><a class="nav-link" href="../mobile-apps/common-rejections.html">Common Rejections</a></li></ul></div><div class="docs-sidebar-group"><h3>Maintenance</h3><ul><li><a class="nav-link" href="../maintenance/updating-the-product.html">Updating the Product</a></li><li><a class="nav-link" href="../maintenance/changelog.html">Reading the Changelog</a></li><li><a class="nav-link" href="../maintenance/backup-restore.html">Backup &amp; Restore Around an Update</a></li><li><a class="nav-link" href="../maintenance/preserving-customizations.html">Preserving Customizations</a></li></ul></div><div class="docs-sidebar-group"><h3>Reference</h3><ul><li><a class="nav-link" href="../reference/api-overview.html">API Overview</a></li><li><a class="nav-link" href="../reference/settings-reference.html">Settings Reference</a></li><li><a class="nav-link" href="../reference/permissions-matrix.html">Permissions Matrix</a></li><li><a class="nav-link" href="../reference/troubleshooting-index.html">Troubleshooting Index</a></li><li><a class="nav-link" href="../reference/faq.html">FAQ</a></li><li><a class="nav-link" href="../reference/credits.html">Credits &amp;amp; Licenses</a></li></ul></div></nav>
+  <main class="docs-main"><p class="docs-breadcrumb"><a href="../index.html">Documentation</a> / Operations</p><article class="docs-content"><h1>Door Check-in &amp; Offline Use</h1><p class="docs-dek">How door staff scan tickets with the Scanner app, what happens with no signal, and how buyers&#039; tickets work offline.</p><h2 id="setting-up-door-staff">Setting up door staff</h2>
+<p>An organizer creates scanner accounts under <strong>Organizer → Door staff</strong> and ticks the
+venues each person works. Staff can scan every one of that organizer's events at those venues,
+including events added later. "Revoke access" removes every venue and signs the person out of the
+Scanner app straight away.</p>
+
+<h2 id="scanning">Scanning</h2>
+<p>Staff sign in to the Scanner app, pick the event, and point the camera at the ticket's QR code.
+Each scan answers <em>Admitted</em>, <em>Already used</em> (with when) or a reason the
+ticket isn't valid. The event screen shows live door numbers — checked in vs. expected —
+refreshed every 20 seconds.</p>
+
+<h2 id="find-a-guest">Find a guest</h2>
+<p>For a guest whose phone died or who can't find their ticket, tap <strong>Find a guest</strong>
+on the event screen and type at least two characters of their name, email or ticket code. Each
+result shows whether that ticket is already in, and a <strong>Check in</strong> button.</p>
+
+<h2 id="when-the-connection-drops">When the connection drops</h2>
+<p>A scan the server doesn't answer — no signal, or the server is briefly unavailable — is
+<strong>saved on the phone</strong> and shown as "Saved". The Scanner app keeps re-sending saved
+scans in the background until the server answers, so the queue at the door keeps moving. While a
+scan is saved, check that ticket by eye.</p>
+<p>A chip on the event screen shows how many scans are waiting; tap it to see them or
+<strong>Send now</strong>. If a saved scan later comes back as anything other than admitted (for
+example, the same ticket was already used at another entrance), it moves to <strong>Need a
+look</strong> so staff can find that guest and check their ticket. Saved scans survive the app
+being closed.</p>
+
+<h2 id="buyers-tickets-offline">Buyers' tickets offline</h2>
+<p>The customer app keeps a copy of the buyer's tickets on their phone each time the wallet loads.
+With no connection, the wallet shows that copy with a notice of when it was saved — the QR codes
+still scan at the door. The copy is deleted when the buyer signs out.</p></article><nav class="docs-pagenav"><a class="prev" href="../operations/maps-and-venue-locations.html"><span class="dir">&larr; Previous</span>Maps &amp; Venue Locations</a><a class="next" href="../mobile-apps/toolchain-setup.html"><span class="dir">Next &rarr;</span>Toolchain Setup</a></nav></main>
+  <nav class="docs-toc"><h3>On this page</h3><ul><li><a href="#setting-up-door-staff">Setting up door staff</a></li><li><a href="#scanning">Scanning</a></li><li><a href="#find-a-guest">Find a guest</a></li><li><a href="#when-the-connection-drops">When the connection drops</a></li><li><a href="#buyers-tickets-offline">Buyers&#039; tickets offline</a></li></ul></nav>
+</div>
+<script src="../assets/docs.js"></script>
+</body>
+</html>

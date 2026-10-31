@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Post-Install Security Checklist — PerfectEvents Documentation</title>
+<meta name="description" content="What the platform already handles for you, and the handful of things only you can set.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="icon" type="image/png" href="../assets/mark.png">
+<link rel="stylesheet" href="../assets/docs.css">
+
+</head>
+<body data-root="..">
+<header class="docs-topbar">
+  <button class="docs-menu-toggle" type="button" aria-label="Toggle navigation">&#9776;</button>
+  <a class="docs-brand" href="../index.html"><img src="../assets/mark.png" alt="" width="28" height="28"><span class="eyebrow">PerfectEvents</span>Documentation</a>
+  <div class="docs-search">
+    <input type="search" placeholder="Search the docs…" autocomplete="off" aria-label="Search documentation">
+    <div class="docs-search-results"></div>
+  </div>
+</header>
+<div class="docs-shell">
+  <nav class="docs-sidebar"><div class="docs-sidebar-group"><h3>Getting Started</h3><ul><li><a class="nav-link" href="../getting-started/overview.html">Overview</a></li><li><a class="nav-link" href="../getting-started/server-requirements.html">Server Requirements</a></li><li><a class="nav-link" href="../getting-started/whats-in-the-box.html">What&#039;s in the Box</a></li><li><a class="nav-link" href="../getting-started/admin-vs-rebuild-boundary.html">Admin vs. Rebuild</a></li></ul></div><div class="docs-sidebar-group"><h3>Installation</h3><ul><li><a class="nav-link" href="../installation/wizard-walkthrough.html">Installation Wizard Walkthrough</a></li><li><a class="nav-link" href="../installation/cpanel.html">Installing on cPanel / Shared Hosting</a></li><li><a class="nav-link" href="../installation/vps.html">Installing on a VPS</a></li><li><a class="nav-link" href="../installation/subdirectory-install.html">Installing in a Subdirectory</a></li><li><a class="nav-link" href="../installation/troubleshooting-installer.html">Troubleshooting the Installer</a></li><li><a class="nav-link is-active" href="../installation/post-install-security-checklist.html">Post-Install Security Checklist</a></li></ul></div><div class="docs-sidebar-group"><h3>Configuration</h3><ul><li><a class="nav-link" href="../configuration/environment-variables.html">Environment Variables</a></li><li><a class="nav-link" href="../configuration/cron-and-queues.html">Cron &amp; Queue Workers</a></li><li><a class="nav-link" href="../configuration/storage-and-s3.html">Storage &amp; S3</a></li><li><a class="nav-link" href="../configuration/cache.html">Cache</a></li><li><a class="nav-link" href="../configuration/https.html">HTTPS</a></li></ul></div><div class="docs-sidebar-group"><h3>Integrations</h3><ul><li><a class="nav-link" href="../integrations/stripe.html">Stripe</a></li><li><a class="nav-link" href="../integrations/paypal.html">PayPal</a></li><li><a class="nav-link" href="../integrations/razorpay.html">Razorpay</a></li><li><a class="nav-link" href="../integrations/paystack.html">Paystack</a></li><li><a class="nav-link" href="../integrations/email-smtp.html">Email (SMTP)</a></li><li><a class="nav-link" href="../integrations/sms.html">SMS (Twilio)</a></li><li><a class="nav-link" href="../integrations/social-login.html">Social Login</a></li><li><a class="nav-link" href="../integrations/firebase-and-push.html">Firebase &amp; Push Notifications</a></li></ul></div><div class="docs-sidebar-group"><h3>Operations</h3><ul><li><a class="nav-link" href="../operations/admin-tour.html">Admin Panel Tour</a></li><li><a class="nav-link" href="../operations/organizer-tour.html">Organizer Panel Tour</a></li><li><a class="nav-link" href="../operations/approvals.html">Approvals</a></li><li><a class="nav-link" href="../operations/refunds.html">Refunds</a></li><li><a class="nav-link" href="../operations/payouts.html">Payouts</a></li><li><a class="nav-link" href="../operations/coupons.html">Coupons</a></li><li><a class="nav-link" href="../operations/cms-and-homepage.html">CMS &amp; Homepage</a></li><li><a class="nav-link" href="../operations/notification-templates.html">Notification Templates</a></li><li><a class="nav-link" href="../operations/localization.html">Localization &amp; Adding a Language</a></li><li><a class="nav-link" href="../operations/backups.html">Backups</a></li><li><a class="nav-link" href="../operations/multi-country-and-currency.html">Multi-Country &amp; Multi-Currency</a></li><li><a class="nav-link" href="../operations/modules.html">Modules</a></li><li><a class="nav-link" href="../operations/maps-and-venue-locations.html">Maps &amp; Venue Locations</a></li><li><a class="nav-link" href="../operations/door-check-in.html">Door Check-in &amp; Offline Use</a></li></ul></div><div class="docs-sidebar-group"><h3>Mobile Apps</h3><ul><li><a class="nav-link" href="../mobile-apps/toolchain-setup.html">Toolchain Setup</a></li><li><a class="nav-link" href="../mobile-apps/project-structure.html">Project Structure</a></li><li><a class="nav-link" href="../mobile-apps/config-files.html">Config Files</a></li><li><a class="nav-link" href="../mobile-apps/rebranding-the-apps.html">Rebranding the Apps</a></li><li><a class="nav-link" href="../mobile-apps/admin-configurable-vs-rebuild.html">Admin-Configurable vs. Rebuild</a></li><li><a class="nav-link" href="../mobile-apps/building-android.html">Building Android (AAB)</a></li><li><a class="nav-link" href="../mobile-apps/building-ios.html">Building iOS (IPA)</a></li><li><a class="nav-link" href="../mobile-apps/play-store-submission.html">Play Store Submission</a></li><li><a class="nav-link" href="../mobile-apps/app-store-submission.html">App Store Submission</a></li><li><a class="nav-link" href="../mobile-apps/common-rejections.html">Common Rejections</a></li></ul></div><div class="docs-sidebar-group"><h3>Maintenance</h3><ul><li><a class="nav-link" href="../maintenance/updating-the-product.html">Updating the Product</a></li><li><a class="nav-link" href="../maintenance/changelog.html">Reading the Changelog</a></li><li><a class="nav-link" href="../maintenance/backup-restore.html">Backup &amp; Restore Around an Update</a></li><li><a class="nav-link" href="../maintenance/preserving-customizations.html">Preserving Customizations</a></li></ul></div><div class="docs-sidebar-group"><h3>Reference</h3><ul><li><a class="nav-link" href="../reference/api-overview.html">API Overview</a></li><li><a class="nav-link" href="../reference/settings-reference.html">Settings Reference</a></li><li><a class="nav-link" href="../reference/permissions-matrix.html">Permissions Matrix</a></li><li><a class="nav-link" href="../reference/troubleshooting-index.html">Troubleshooting Index</a></li><li><a class="nav-link" href="../reference/faq.html">FAQ</a></li><li><a class="nav-link" href="../reference/credits.html">Credits &amp;amp; Licenses</a></li></ul></div></nav>
+  <main class="docs-main"><p class="docs-breadcrumb"><a href="../index.html">Documentation</a> / Installation</p><article class="docs-content"><h1>Post-Install Security Checklist</h1><p class="docs-dek">What the platform already handles for you, and the handful of things only you can set.</p><p>Most of the hardening below ships on by default — nothing to configure. This page is mainly
+about the few things that depend on <em>your</em> environment.</p>
+
+<h2 id="already-handled-for-you">Already handled for you</h2>
+<ul>
+<li><strong>Security headers</strong> on every response — Content-Security-Policy,
+X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy, and
+Strict-Transport-Security whenever the request is HTTPS.</li>
+<li><strong>Rich-text sanitization</strong> — CMS page bodies and FAQ answers are sanitized on
+save; an admin account being compromised (or a copy-pasted body with embedded script) can't turn
+into stored XSS.</li>
+<li><strong>Upload type restrictions</strong> — logo, favicon, organizer logo, and event
+cover/gallery uploads are restricted to JPEG/PNG/GIF/WebP; SVG is deliberately excluded everywhere
+uploads are accepted, since an SVG can carry a script.</li>
+<li><strong>Rate limiting</strong> — public search/discovery endpoints and the whole API have
+floor-level throttles against scraping and brute-force abuse.</li>
+<li><strong>Signed, verified webhooks</strong> — every payment gateway's webhook is signature- and
+amount-checked before it's trusted; a webhook URL alone is never enough to fake a payment.</li>
+<li><strong>Signed QR tickets</strong> — ticket QR codes are HMAC-signed; the scanner rejects a
+forged or altered code even if someone guesses a ticket's code format.</li>
+<li><strong>Email verification</strong> gates checkout for self-registered accounts.</li>
+</ul>
+
+<h2 id="things-you-need-to-set-yourself">Things you need to set yourself</h2>
+<ul>
+<li><strong>Use HTTPS.</strong> Enable AutoSSL/Let's Encrypt and set <code>APP_URL</code> to
+<code>https://</code> — the app automatically enables secure session cookies and HSTS once it sees
+that. Running over plain HTTP after launch is the single biggest gap on this list. See
+<a href="../configuration/https.html">HTTPS</a>.</li>
+<li><strong>Use a strong admin password.</strong> The install wizard enforces a 10-character
+minimum on the admin account it creates, but a long, unique password (ideally from a password
+manager) is on you.</li>
+<li><strong>Keep gateway credentials to live keys only in production.</strong> Double-check each
+payment gateway is switched from its test/sandbox mode to live mode (Admin → Settings → Payment
+gateways) before you actually launch — see <a href="../integrations/">Integrations</a> for each
+gateway's specific keys.</li>
+<li><strong>Turn on SMTP for real mail delivery.</strong> If you left the Mail step on the `log`
+driver during install, transactional emails (password resets, ticket receipts, verification links)
+are only being written to a log file, not delivered. Set real SMTP from Admin → Settings → Mail.</li>
+<li><strong>Restrict database credentials.</strong> Use a MySQL user scoped to only the
+PerfectEvents database, not a shared root-equivalent account.</li>
+<li><strong>Keep automated backups.</strong> There's no built-in backup feature yet (see
+<a href="../operations/backups.html">Backups</a>) — set up your host's or provider's own scheduled
+MySQL dump + file backup for <code>storage/app/public</code> (uploaded media) if you don't already
+have one.</li>
+</ul>
+
+<div class="callout callout-note">
+<span class="callout-title">A known, deliberate trade-off</span>
+The default Content-Security-Policy allows <code>unsafe-eval</code>/<code>unsafe-inline</code> in
+<code>script-src</code> because the Admin/Organizer panels use Alpine.js (via Livewire), which
+evaluates inline expressions. The policy still meaningfully restricts framing, object embeds, and
+form submission targets — it isn't a no-op — but it isn't a maximally strict CSP either. This is an
+intentional limit of the hand-rolled-panel architecture, not an oversight.
+</div></article><nav class="docs-pagenav"><a class="prev" href="../installation/troubleshooting-installer.html"><span class="dir">&larr; Previous</span>Troubleshooting the Installer</a><a class="next" href="../configuration/environment-variables.html"><span class="dir">Next &rarr;</span>Environment Variables</a></nav></main>
+  <nav class="docs-toc"><h3>On this page</h3><ul><li><a href="#already-handled-for-you">Already handled for you</a></li><li><a href="#things-you-need-to-set-yourself">Things you need to set yourself</a></li></ul></nav>
+</div>
+<script src="../assets/docs.js"></script>
+</body>
+</html>

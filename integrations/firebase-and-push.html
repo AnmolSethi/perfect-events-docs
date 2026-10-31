@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Firebase &amp; Push Notifications — PerfectEvents Documentation</title>
+<meta name="description" content="Server-side credentials in .env, per-app config files in Flutter — two separate setups.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="icon" type="image/png" href="../assets/mark.png">
+<link rel="stylesheet" href="../assets/docs.css">
+
+</head>
+<body data-root="..">
+<header class="docs-topbar">
+  <button class="docs-menu-toggle" type="button" aria-label="Toggle navigation">&#9776;</button>
+  <a class="docs-brand" href="../index.html"><img src="../assets/mark.png" alt="" width="28" height="28"><span class="eyebrow">PerfectEvents</span>Documentation</a>
+  <div class="docs-search">
+    <input type="search" placeholder="Search the docs…" autocomplete="off" aria-label="Search documentation">
+    <div class="docs-search-results"></div>
+  </div>
+</header>
+<div class="docs-shell">
+  <nav class="docs-sidebar"><div class="docs-sidebar-group"><h3>Getting Started</h3><ul><li><a class="nav-link" href="../getting-started/overview.html">Overview</a></li><li><a class="nav-link" href="../getting-started/server-requirements.html">Server Requirements</a></li><li><a class="nav-link" href="../getting-started/whats-in-the-box.html">What&#039;s in the Box</a></li><li><a class="nav-link" href="../getting-started/admin-vs-rebuild-boundary.html">Admin vs. Rebuild</a></li></ul></div><div class="docs-sidebar-group"><h3>Installation</h3><ul><li><a class="nav-link" href="../installation/wizard-walkthrough.html">Installation Wizard Walkthrough</a></li><li><a class="nav-link" href="../installation/cpanel.html">Installing on cPanel / Shared Hosting</a></li><li><a class="nav-link" href="../installation/vps.html">Installing on a VPS</a></li><li><a class="nav-link" href="../installation/subdirectory-install.html">Installing in a Subdirectory</a></li><li><a class="nav-link" href="../installation/troubleshooting-installer.html">Troubleshooting the Installer</a></li><li><a class="nav-link" href="../installation/post-install-security-checklist.html">Post-Install Security Checklist</a></li></ul></div><div class="docs-sidebar-group"><h3>Configuration</h3><ul><li><a class="nav-link" href="../configuration/environment-variables.html">Environment Variables</a></li><li><a class="nav-link" href="../configuration/cron-and-queues.html">Cron &amp; Queue Workers</a></li><li><a class="nav-link" href="../configuration/storage-and-s3.html">Storage &amp; S3</a></li><li><a class="nav-link" href="../configuration/cache.html">Cache</a></li><li><a class="nav-link" href="../configuration/https.html">HTTPS</a></li></ul></div><div class="docs-sidebar-group"><h3>Integrations</h3><ul><li><a class="nav-link" href="../integrations/stripe.html">Stripe</a></li><li><a class="nav-link" href="../integrations/paypal.html">PayPal</a></li><li><a class="nav-link" href="../integrations/razorpay.html">Razorpay</a></li><li><a class="nav-link" href="../integrations/paystack.html">Paystack</a></li><li><a class="nav-link" href="../integrations/email-smtp.html">Email (SMTP)</a></li><li><a class="nav-link" href="../integrations/sms.html">SMS (Twilio)</a></li><li><a class="nav-link" href="../integrations/social-login.html">Social Login</a></li><li><a class="nav-link is-active" href="../integrations/firebase-and-push.html">Firebase &amp; Push Notifications</a></li></ul></div><div class="docs-sidebar-group"><h3>Operations</h3><ul><li><a class="nav-link" href="../operations/admin-tour.html">Admin Panel Tour</a></li><li><a class="nav-link" href="../operations/organizer-tour.html">Organizer Panel Tour</a></li><li><a class="nav-link" href="../operations/approvals.html">Approvals</a></li><li><a class="nav-link" href="../operations/refunds.html">Refunds</a></li><li><a class="nav-link" href="../operations/payouts.html">Payouts</a></li><li><a class="nav-link" href="../operations/coupons.html">Coupons</a></li><li><a class="nav-link" href="../operations/cms-and-homepage.html">CMS &amp; Homepage</a></li><li><a class="nav-link" href="../operations/notification-templates.html">Notification Templates</a></li><li><a class="nav-link" href="../operations/localization.html">Localization &amp; Adding a Language</a></li><li><a class="nav-link" href="../operations/backups.html">Backups</a></li><li><a class="nav-link" href="../operations/multi-country-and-currency.html">Multi-Country &amp; Multi-Currency</a></li><li><a class="nav-link" href="../operations/modules.html">Modules</a></li><li><a class="nav-link" href="../operations/maps-and-venue-locations.html">Maps &amp; Venue Locations</a></li><li><a class="nav-link" href="../operations/door-check-in.html">Door Check-in &amp; Offline Use</a></li></ul></div><div class="docs-sidebar-group"><h3>Mobile Apps</h3><ul><li><a class="nav-link" href="../mobile-apps/toolchain-setup.html">Toolchain Setup</a></li><li><a class="nav-link" href="../mobile-apps/project-structure.html">Project Structure</a></li><li><a class="nav-link" href="../mobile-apps/config-files.html">Config Files</a></li><li><a class="nav-link" href="../mobile-apps/rebranding-the-apps.html">Rebranding the Apps</a></li><li><a class="nav-link" href="../mobile-apps/admin-configurable-vs-rebuild.html">Admin-Configurable vs. Rebuild</a></li><li><a class="nav-link" href="../mobile-apps/building-android.html">Building Android (AAB)</a></li><li><a class="nav-link" href="../mobile-apps/building-ios.html">Building iOS (IPA)</a></li><li><a class="nav-link" href="../mobile-apps/play-store-submission.html">Play Store Submission</a></li><li><a class="nav-link" href="../mobile-apps/app-store-submission.html">App Store Submission</a></li><li><a class="nav-link" href="../mobile-apps/common-rejections.html">Common Rejections</a></li></ul></div><div class="docs-sidebar-group"><h3>Maintenance</h3><ul><li><a class="nav-link" href="../maintenance/updating-the-product.html">Updating the Product</a></li><li><a class="nav-link" href="../maintenance/changelog.html">Reading the Changelog</a></li><li><a class="nav-link" href="../maintenance/backup-restore.html">Backup &amp; Restore Around an Update</a></li><li><a class="nav-link" href="../maintenance/preserving-customizations.html">Preserving Customizations</a></li></ul></div><div class="docs-sidebar-group"><h3>Reference</h3><ul><li><a class="nav-link" href="../reference/api-overview.html">API Overview</a></li><li><a class="nav-link" href="../reference/settings-reference.html">Settings Reference</a></li><li><a class="nav-link" href="../reference/permissions-matrix.html">Permissions Matrix</a></li><li><a class="nav-link" href="../reference/troubleshooting-index.html">Troubleshooting Index</a></li><li><a class="nav-link" href="../reference/faq.html">FAQ</a></li><li><a class="nav-link" href="../reference/credits.html">Credits &amp;amp; Licenses</a></li></ul></div></nav>
+  <main class="docs-main"><p class="docs-breadcrumb"><a href="../index.html">Documentation</a> / Integrations</p><article class="docs-content"><h1>Firebase &amp; Push Notifications</h1><p class="docs-dek">Server-side credentials in .env, per-app config files in Flutter — two separate setups.</p><p>Push notifications need setup in two places: the Laravel server (to <em>send</em> pushes) and
+each Flutter app (to <em>receive</em> them). Neither is required for the rest of the product to
+work — push is an optional channel, off by default.</p>
+
+<h2 id="1-server-side-laravel">1. Server side (Laravel)</h2>
+<ol>
+<li>In the Firebase console, open your project → Project settings → Service accounts, and generate
+a new private key. This downloads a JSON file.</li>
+<li>Upload that JSON file somewhere on your server <em>outside</em> the public web root, and add its
+path to <code>.env</code>:
+<pre><code>FCM_CREDENTIALS=/absolute/path/to/firebase-service-account.json</code></pre>
+</li>
+<li>Optionally set <code>FCM_PROJECT_ID</code> if you want to override the project id — normally
+it's read straight from the service-account file, so this is rarely needed.</li>
+<li>Turn the push channel on (alongside SMS/email) in notification settings.</li>
+</ol>
+<p>If the credentials file is missing or unreadable, the app doesn't error — it simply treats push
+as unconfigured and skips that channel silently, so a half-finished setup never breaks anything
+else.</p>
+
+<h2 id="2-each-flutter-app-needs-its-own-firebase-project">2. Each Flutter app needs its own Firebase project</h2>
+<p>The customer app and the scanner app are <strong>separate Firebase projects</strong> (or at
+minimum separate registered apps within one project) — set each one up independently via the
+FlutterFire CLI or the Firebase console:</p>
+<table>
+<tr><th>App</th><th>Android file</th><th>iOS file</th></tr>
+<tr><td>Customer</td><td><code>flutter/apps/customer/android/app/google-services.json</code></td><td><code>flutter/apps/customer/ios/Runner/GoogleService-Info.plist</code></td></tr>
+<tr><td>Scanner</td><td><code>flutter/apps/scanner/android/app/google-services.json</code></td><td><code>flutter/apps/scanner/ios/Runner/GoogleService-Info.plist</code></td></tr>
+</table>
+<p>The repo ships with placeholder Firebase config for its own demo project — replace both files
+per app with your own before building for release. This is one of the values that
+<strong>requires a rebuild</strong>, not an Admin setting — see
+<a href="../mobile-apps/admin-configurable-vs-rebuild.html">Admin-configurable vs. rebuild</a>.</p>
+
+<div class="callout callout-tip">
+<span class="callout-title">Test before you ship</span>
+Send a test push to a debug build of each app once its config files are in place, before doing a
+release build — a wrong package name/bundle id in Firebase vs. the app itself is the most common
+reason pushes silently never arrive.
+</div></article><nav class="docs-pagenav"><a class="prev" href="../integrations/social-login.html"><span class="dir">&larr; Previous</span>Social Login</a><a class="next" href="../operations/admin-tour.html"><span class="dir">Next &rarr;</span>Admin Panel Tour</a></nav></main>
+  <nav class="docs-toc"><h3>On this page</h3><ul><li><a href="#1-server-side-laravel">1. Server side (Laravel)</a></li><li><a href="#2-each-flutter-app-needs-its-own-firebase-project">2. Each Flutter app needs its own Firebase project</a></li></ul></nav>
+</div>
+<script src="../assets/docs.js"></script>
+</body>
+</html>

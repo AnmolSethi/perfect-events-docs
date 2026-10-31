@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Approvals — PerfectEvents Documentation</title>
+<meta name="description" content="Two separate approval layers — organizer accounts, and individual events.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="icon" type="image/png" href="../assets/mark.png">
+<link rel="stylesheet" href="../assets/docs.css">
+
+</head>
+<body data-root="..">
+<header class="docs-topbar">
+  <button class="docs-menu-toggle" type="button" aria-label="Toggle navigation">&#9776;</button>
+  <a class="docs-brand" href="../index.html"><img src="../assets/mark.png" alt="" width="28" height="28"><span class="eyebrow">PerfectEvents</span>Documentation</a>
+  <div class="docs-search">
+    <input type="search" placeholder="Search the docs…" autocomplete="off" aria-label="Search documentation">
+    <div class="docs-search-results"></div>
+  </div>
+</header>
+<div class="docs-shell">
+  <nav class="docs-sidebar"><div class="docs-sidebar-group"><h3>Getting Started</h3><ul><li><a class="nav-link" href="../getting-started/overview.html">Overview</a></li><li><a class="nav-link" href="../getting-started/server-requirements.html">Server Requirements</a></li><li><a class="nav-link" href="../getting-started/whats-in-the-box.html">What&#039;s in the Box</a></li><li><a class="nav-link" href="../getting-started/admin-vs-rebuild-boundary.html">Admin vs. Rebuild</a></li></ul></div><div class="docs-sidebar-group"><h3>Installation</h3><ul><li><a class="nav-link" href="../installation/wizard-walkthrough.html">Installation Wizard Walkthrough</a></li><li><a class="nav-link" href="../installation/cpanel.html">Installing on cPanel / Shared Hosting</a></li><li><a class="nav-link" href="../installation/vps.html">Installing on a VPS</a></li><li><a class="nav-link" href="../installation/subdirectory-install.html">Installing in a Subdirectory</a></li><li><a class="nav-link" href="../installation/troubleshooting-installer.html">Troubleshooting the Installer</a></li><li><a class="nav-link" href="../installation/post-install-security-checklist.html">Post-Install Security Checklist</a></li></ul></div><div class="docs-sidebar-group"><h3>Configuration</h3><ul><li><a class="nav-link" href="../configuration/environment-variables.html">Environment Variables</a></li><li><a class="nav-link" href="../configuration/cron-and-queues.html">Cron &amp; Queue Workers</a></li><li><a class="nav-link" href="../configuration/storage-and-s3.html">Storage &amp; S3</a></li><li><a class="nav-link" href="../configuration/cache.html">Cache</a></li><li><a class="nav-link" href="../configuration/https.html">HTTPS</a></li></ul></div><div class="docs-sidebar-group"><h3>Integrations</h3><ul><li><a class="nav-link" href="../integrations/stripe.html">Stripe</a></li><li><a class="nav-link" href="../integrations/paypal.html">PayPal</a></li><li><a class="nav-link" href="../integrations/razorpay.html">Razorpay</a></li><li><a class="nav-link" href="../integrations/paystack.html">Paystack</a></li><li><a class="nav-link" href="../integrations/email-smtp.html">Email (SMTP)</a></li><li><a class="nav-link" href="../integrations/sms.html">SMS (Twilio)</a></li><li><a class="nav-link" href="../integrations/social-login.html">Social Login</a></li><li><a class="nav-link" href="../integrations/firebase-and-push.html">Firebase &amp; Push Notifications</a></li></ul></div><div class="docs-sidebar-group"><h3>Operations</h3><ul><li><a class="nav-link" href="../operations/admin-tour.html">Admin Panel Tour</a></li><li><a class="nav-link" href="../operations/organizer-tour.html">Organizer Panel Tour</a></li><li><a class="nav-link is-active" href="../operations/approvals.html">Approvals</a></li><li><a class="nav-link" href="../operations/refunds.html">Refunds</a></li><li><a class="nav-link" href="../operations/payouts.html">Payouts</a></li><li><a class="nav-link" href="../operations/coupons.html">Coupons</a></li><li><a class="nav-link" href="../operations/cms-and-homepage.html">CMS &amp; Homepage</a></li><li><a class="nav-link" href="../operations/notification-templates.html">Notification Templates</a></li><li><a class="nav-link" href="../operations/localization.html">Localization &amp; Adding a Language</a></li><li><a class="nav-link" href="../operations/backups.html">Backups</a></li><li><a class="nav-link" href="../operations/multi-country-and-currency.html">Multi-Country &amp; Multi-Currency</a></li><li><a class="nav-link" href="../operations/modules.html">Modules</a></li><li><a class="nav-link" href="../operations/maps-and-venue-locations.html">Maps &amp; Venue Locations</a></li><li><a class="nav-link" href="../operations/door-check-in.html">Door Check-in &amp; Offline Use</a></li></ul></div><div class="docs-sidebar-group"><h3>Mobile Apps</h3><ul><li><a class="nav-link" href="../mobile-apps/toolchain-setup.html">Toolchain Setup</a></li><li><a class="nav-link" href="../mobile-apps/project-structure.html">Project Structure</a></li><li><a class="nav-link" href="../mobile-apps/config-files.html">Config Files</a></li><li><a class="nav-link" href="../mobile-apps/rebranding-the-apps.html">Rebranding the Apps</a></li><li><a class="nav-link" href="../mobile-apps/admin-configurable-vs-rebuild.html">Admin-Configurable vs. Rebuild</a></li><li><a class="nav-link" href="../mobile-apps/building-android.html">Building Android (AAB)</a></li><li><a class="nav-link" href="../mobile-apps/building-ios.html">Building iOS (IPA)</a></li><li><a class="nav-link" href="../mobile-apps/play-store-submission.html">Play Store Submission</a></li><li><a class="nav-link" href="../mobile-apps/app-store-submission.html">App Store Submission</a></li><li><a class="nav-link" href="../mobile-apps/common-rejections.html">Common Rejections</a></li></ul></div><div class="docs-sidebar-group"><h3>Maintenance</h3><ul><li><a class="nav-link" href="../maintenance/updating-the-product.html">Updating the Product</a></li><li><a class="nav-link" href="../maintenance/changelog.html">Reading the Changelog</a></li><li><a class="nav-link" href="../maintenance/backup-restore.html">Backup &amp; Restore Around an Update</a></li><li><a class="nav-link" href="../maintenance/preserving-customizations.html">Preserving Customizations</a></li></ul></div><div class="docs-sidebar-group"><h3>Reference</h3><ul><li><a class="nav-link" href="../reference/api-overview.html">API Overview</a></li><li><a class="nav-link" href="../reference/settings-reference.html">Settings Reference</a></li><li><a class="nav-link" href="../reference/permissions-matrix.html">Permissions Matrix</a></li><li><a class="nav-link" href="../reference/troubleshooting-index.html">Troubleshooting Index</a></li><li><a class="nav-link" href="../reference/faq.html">FAQ</a></li><li><a class="nav-link" href="../reference/credits.html">Credits &amp;amp; Licenses</a></li></ul></div></nav>
+  <main class="docs-main"><p class="docs-breadcrumb"><a href="../index.html">Documentation</a> / Operations</p><article class="docs-content"><h1>Approvals</h1><p class="docs-dek">Two separate approval layers — organizer accounts, and individual events.</p><p>There are two independent things an admin approves: whether someone is allowed to operate as an
+organizer at all, and whether a given event is allowed to go live. Approving one doesn't approve
+the other.</p>
+
+<h2 id="organizer-account-approval">Organizer account approval</h2>
+<p>A new organizer account starts in <strong>Pending</strong> review. While pending, they can build
+and edit event drafts, but can't publish anything or appear on the public site. An admin reviews
+and sets the account to <strong>Approved</strong> (cleared to operate), <strong>Rejected</strong>,
+or later <strong>Suspended</strong> if an already-approved organizer needs to be pulled.</p>
+
+<h2 id="event-approval">Event approval</h2>
+<p>Separately, each event moves through <strong>Draft</strong> (organizer still editing) →
+<strong>Pending</strong> (submitted, awaiting you) → <strong>Published</strong> (live and publicly
+discoverable), plus <strong>Cancelled</strong> and <strong>Completed</strong> once it's run its
+course or been called off. Only <code>Published</code> events are visible to buyers.</p>
+
+<p>Whether a submitted event actually needs your review is itself a
+<span class="badge badge-admin">Admin</span> setting — <strong>"Require event approval"</strong>
+(General settings, on by default). With it on, every newly submitted event lands in Pending; with
+it off, submitting an event publishes it immediately, and this whole page mostly doesn't apply.
+Either way, an organizer who isn't yet account-approved can't publish at all, regardless of this
+setting.</p>
+
+<h2 id="reviewing-a-pending-event">Reviewing a pending event</h2>
+<p>Admin → Events, filtered to Pending, shows the listing exactly as the organizer built it —
+details, ticket types, pricing, venue, media. From there:</p>
+<ul>
+<li><strong>Approve</strong> — publishes it immediately and clears any earlier moderation note.</li>
+<li><strong>Send back to draft</strong> — requires a reason, stored on the event and shown to the
+organizer so they know what to fix. This also works on an already-live event, for pulling one back
+if a problem turns up after the fact.</li>
+</ul>
+<p>Editing an event that's already <code>Published</code> does <em>not</em> revert it to Pending —
+it stays published straight through the edit. Moderation is a one-time gate on getting live in the
+first place, not a re-review on every change.</p>
+
+<h2 id="featuring-an-event">Featuring an event</h2>
+<p>Independently of approval, an admin can mark any event as <strong>featured</strong>, used for
+homepage/featured placements. This has no bearing on whether the event is approved or public.</p></article><nav class="docs-pagenav"><a class="prev" href="../operations/organizer-tour.html"><span class="dir">&larr; Previous</span>Organizer Panel Tour</a><a class="next" href="../operations/refunds.html"><span class="dir">Next &rarr;</span>Refunds</a></nav></main>
+  <nav class="docs-toc"><h3>On this page</h3><ul><li><a href="#organizer-account-approval">Organizer account approval</a></li><li><a href="#event-approval">Event approval</a></li><li><a href="#reviewing-a-pending-event">Reviewing a pending event</a></li><li><a href="#featuring-an-event">Featuring an event</a></li></ul></nav>
+</div>
+<script src="../assets/docs.js"></script>
+</body>
+</html>

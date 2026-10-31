@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Troubleshooting the Installer — PerfectEvents Documentation</title>
+<meta name="description" content="Symptom, cause, fix — for the most common install-time problems.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="icon" type="image/png" href="../assets/mark.png">
+<link rel="stylesheet" href="../assets/docs.css">
+
+</head>
+<body data-root="..">
+<header class="docs-topbar">
+  <button class="docs-menu-toggle" type="button" aria-label="Toggle navigation">&#9776;</button>
+  <a class="docs-brand" href="../index.html"><img src="../assets/mark.png" alt="" width="28" height="28"><span class="eyebrow">PerfectEvents</span>Documentation</a>
+  <div class="docs-search">
+    <input type="search" placeholder="Search the docs…" autocomplete="off" aria-label="Search documentation">
+    <div class="docs-search-results"></div>
+  </div>
+</header>
+<div class="docs-shell">
+  <nav class="docs-sidebar"><div class="docs-sidebar-group"><h3>Getting Started</h3><ul><li><a class="nav-link" href="../getting-started/overview.html">Overview</a></li><li><a class="nav-link" href="../getting-started/server-requirements.html">Server Requirements</a></li><li><a class="nav-link" href="../getting-started/whats-in-the-box.html">What&#039;s in the Box</a></li><li><a class="nav-link" href="../getting-started/admin-vs-rebuild-boundary.html">Admin vs. Rebuild</a></li></ul></div><div class="docs-sidebar-group"><h3>Installation</h3><ul><li><a class="nav-link" href="../installation/wizard-walkthrough.html">Installation Wizard Walkthrough</a></li><li><a class="nav-link" href="../installation/cpanel.html">Installing on cPanel / Shared Hosting</a></li><li><a class="nav-link" href="../installation/vps.html">Installing on a VPS</a></li><li><a class="nav-link" href="../installation/subdirectory-install.html">Installing in a Subdirectory</a></li><li><a class="nav-link is-active" href="../installation/troubleshooting-installer.html">Troubleshooting the Installer</a></li><li><a class="nav-link" href="../installation/post-install-security-checklist.html">Post-Install Security Checklist</a></li></ul></div><div class="docs-sidebar-group"><h3>Configuration</h3><ul><li><a class="nav-link" href="../configuration/environment-variables.html">Environment Variables</a></li><li><a class="nav-link" href="../configuration/cron-and-queues.html">Cron &amp; Queue Workers</a></li><li><a class="nav-link" href="../configuration/storage-and-s3.html">Storage &amp; S3</a></li><li><a class="nav-link" href="../configuration/cache.html">Cache</a></li><li><a class="nav-link" href="../configuration/https.html">HTTPS</a></li></ul></div><div class="docs-sidebar-group"><h3>Integrations</h3><ul><li><a class="nav-link" href="../integrations/stripe.html">Stripe</a></li><li><a class="nav-link" href="../integrations/paypal.html">PayPal</a></li><li><a class="nav-link" href="../integrations/razorpay.html">Razorpay</a></li><li><a class="nav-link" href="../integrations/paystack.html">Paystack</a></li><li><a class="nav-link" href="../integrations/email-smtp.html">Email (SMTP)</a></li><li><a class="nav-link" href="../integrations/sms.html">SMS (Twilio)</a></li><li><a class="nav-link" href="../integrations/social-login.html">Social Login</a></li><li><a class="nav-link" href="../integrations/firebase-and-push.html">Firebase &amp; Push Notifications</a></li></ul></div><div class="docs-sidebar-group"><h3>Operations</h3><ul><li><a class="nav-link" href="../operations/admin-tour.html">Admin Panel Tour</a></li><li><a class="nav-link" href="../operations/organizer-tour.html">Organizer Panel Tour</a></li><li><a class="nav-link" href="../operations/approvals.html">Approvals</a></li><li><a class="nav-link" href="../operations/refunds.html">Refunds</a></li><li><a class="nav-link" href="../operations/payouts.html">Payouts</a></li><li><a class="nav-link" href="../operations/coupons.html">Coupons</a></li><li><a class="nav-link" href="../operations/cms-and-homepage.html">CMS &amp; Homepage</a></li><li><a class="nav-link" href="../operations/notification-templates.html">Notification Templates</a></li><li><a class="nav-link" href="../operations/localization.html">Localization &amp; Adding a Language</a></li><li><a class="nav-link" href="../operations/backups.html">Backups</a></li><li><a class="nav-link" href="../operations/multi-country-and-currency.html">Multi-Country &amp; Multi-Currency</a></li><li><a class="nav-link" href="../operations/modules.html">Modules</a></li><li><a class="nav-link" href="../operations/maps-and-venue-locations.html">Maps &amp; Venue Locations</a></li><li><a class="nav-link" href="../operations/door-check-in.html">Door Check-in &amp; Offline Use</a></li></ul></div><div class="docs-sidebar-group"><h3>Mobile Apps</h3><ul><li><a class="nav-link" href="../mobile-apps/toolchain-setup.html">Toolchain Setup</a></li><li><a class="nav-link" href="../mobile-apps/project-structure.html">Project Structure</a></li><li><a class="nav-link" href="../mobile-apps/config-files.html">Config Files</a></li><li><a class="nav-link" href="../mobile-apps/rebranding-the-apps.html">Rebranding the Apps</a></li><li><a class="nav-link" href="../mobile-apps/admin-configurable-vs-rebuild.html">Admin-Configurable vs. Rebuild</a></li><li><a class="nav-link" href="../mobile-apps/building-android.html">Building Android (AAB)</a></li><li><a class="nav-link" href="../mobile-apps/building-ios.html">Building iOS (IPA)</a></li><li><a class="nav-link" href="../mobile-apps/play-store-submission.html">Play Store Submission</a></li><li><a class="nav-link" href="../mobile-apps/app-store-submission.html">App Store Submission</a></li><li><a class="nav-link" href="../mobile-apps/common-rejections.html">Common Rejections</a></li></ul></div><div class="docs-sidebar-group"><h3>Maintenance</h3><ul><li><a class="nav-link" href="../maintenance/updating-the-product.html">Updating the Product</a></li><li><a class="nav-link" href="../maintenance/changelog.html">Reading the Changelog</a></li><li><a class="nav-link" href="../maintenance/backup-restore.html">Backup &amp; Restore Around an Update</a></li><li><a class="nav-link" href="../maintenance/preserving-customizations.html">Preserving Customizations</a></li></ul></div><div class="docs-sidebar-group"><h3>Reference</h3><ul><li><a class="nav-link" href="../reference/api-overview.html">API Overview</a></li><li><a class="nav-link" href="../reference/settings-reference.html">Settings Reference</a></li><li><a class="nav-link" href="../reference/permissions-matrix.html">Permissions Matrix</a></li><li><a class="nav-link" href="../reference/troubleshooting-index.html">Troubleshooting Index</a></li><li><a class="nav-link" href="../reference/faq.html">FAQ</a></li><li><a class="nav-link" href="../reference/credits.html">Credits &amp;amp; Licenses</a></li></ul></div></nav>
+  <main class="docs-main"><p class="docs-breadcrumb"><a href="../index.html">Documentation</a> / Installation</p><article class="docs-content"><h1>Troubleshooting the Installer</h1><p class="docs-dek">Symptom, cause, fix — for the most common install-time problems.</p><h2 id="the-requirements-step-won-t-turn-green">The Requirements step won't turn green</h2>
+<p><strong>Symptom:</strong> One or more items on the Requirements screen stays red.<br>
+<strong>Cause:</strong> A PHP extension is missing, or you're on PHP &lt; 8.3.<br>
+<strong>Fix:</strong> Check with your host how to enable the missing extension (cPanel: "MultiPHP
+INI Editor" or "Select PHP Version" → extension checkboxes; VPS: <code>apt install php8.3-&lt;ext&gt;</code>
+then restart PHP-FPM). Either <code>GD</code> or <code>Imagick</code> satisfies the image
+requirement — you don't need both.</p>
+
+<h2 id="the-permissions-step-won-t-turn-green">The Permissions step won't turn green</h2>
+<p><strong>Symptom:</strong> <code>storage/</code>, <code>bootstrap/cache/</code>, or
+<code>.env</code> shows as not writable.<br>
+<strong>Cause:</strong> Upload tools sometimes preserve restrictive permissions, or the web server
+runs as a different user than the one that uploaded the files.<br>
+<strong>Fix:</strong> <code>chmod -R 775 storage bootstrap/cache</code> (or 755, depending on your
+host's ownership model), and make sure the folder containing <code>.env</code> is writable if
+<code>.env</code> doesn't exist yet. On shared hosting, re-uploading via File Manager rather than
+FTP sometimes fixes ownership mismatches outright.</p>
+
+<h2 id="test-connection-fails-on-the-database-step">"Test connection" fails on the Database step</h2>
+<p><strong>Symptom:</strong> Database step won't proceed even with correct-looking credentials.<br>
+<strong>Cause:</strong> Almost always one of: wrong host (shared hosting is often
+<code>localhost</code>, not <code>127.0.0.1</code>, or vice versa), the database user hasn't been
+granted privileges on that specific database yet, or the DB name/user needed your cPanel account's
+prefix (e.g. <code>cpaneluser_dbname</code>).<br>
+<strong>Fix:</strong> Double-check the exact values from cPanel → MySQL Databases, including the
+prefix. On a VPS, confirm <code>mysql -u youruser -p -h host database</code> works from the same
+server first.</p>
+
+<h2 id="send-test-email-fails-on-the-mail-step">"Send test email" fails on the Mail step</h2>
+<p><strong>Symptom:</strong> Test email never arrives, or the button shows an error.<br>
+<strong>Cause:</strong> Wrong port/encryption combination is the most common one — port 587 wants
+<code>tls</code>, port 465 wants <code>ssl</code>. Some hosts also block outbound port 25/587
+entirely.<br>
+<strong>Fix:</strong> Confirm the port+encryption pairing with your mail provider. You can also
+just skip this for now (leave the driver as <code>log</code>) and configure real SMTP later from
+Admin → Settings → Mail — it isn't required to finish installing.</p>
+
+<h2 id="blank-page-500-error-after-finishing-the-wizard">Blank page / 500 error after finishing the wizard</h2>
+<p><strong>Symptom:</strong> The Done screen never appears; you get a blank page or a generic
+server error.<br>
+<strong>Cause:</strong> Usually a PHP error during the Run step's migration/seed — check your
+host's PHP error log (cPanel: "Errors" in the file manager, or <code>storage/logs/laravel.log</code>
+if it got far enough to write one).<br>
+<strong>Fix:</strong> The Run step is safe to retry — fix whatever the log points at (commonly a
+missing extension that Requirements somehow didn't catch, or a database privilege gap) and reload
+<code>/install</code>; it'll resume from wherever it left off rather than starting over.</p>
+
+<h2 id="im-stuck-on-the-requirements-screen-again">Installed site redirects back to /install</h2>
+<p><strong>Symptom:</strong> Visiting your domain after a successful install redirects back to
+<code>/install</code>.<br>
+<strong>Cause:</strong> The install lock (<code>storage/app/installed.json</code>) was deleted —
+often by a "clean" redeploy that didn't preserve the <code>storage/</code> folder, or by a backup
+restore that only restored the database and not the filesystem.<br>
+<strong>Fix:</strong> Since your <code>installations</code> database row is likely still intact,
+don't re-run the full wizard (it would try to re-seed). Restore <code>storage/app/installed.json</code>
+from a backup if you have one; if not, this is a support-ticket situation rather than something to
+work around by hand.</p>
+
+<p>Still stuck? See the <a href="../reference/troubleshooting-index.html">full troubleshooting
+index</a> for issues outside the installer itself.</p></article><nav class="docs-pagenav"><a class="prev" href="../installation/subdirectory-install.html"><span class="dir">&larr; Previous</span>Installing in a Subdirectory</a><a class="next" href="../installation/post-install-security-checklist.html"><span class="dir">Next &rarr;</span>Post-Install Security Checklist</a></nav></main>
+  <nav class="docs-toc"><h3>On this page</h3><ul><li><a href="#the-requirements-step-won-t-turn-green">The Requirements step won&#039;t turn green</a></li><li><a href="#the-permissions-step-won-t-turn-green">The Permissions step won&#039;t turn green</a></li><li><a href="#test-connection-fails-on-the-database-step">&quot;Test connection&quot; fails on the Database step</a></li><li><a href="#send-test-email-fails-on-the-mail-step">&quot;Send test email&quot; fails on the Mail step</a></li><li><a href="#blank-page-500-error-after-finishing-the-wizard">Blank page / 500 error after finishing the wizard</a></li><li><a href="#im-stuck-on-the-requirements-screen-again">Installed site redirects back to /install</a></li></ul></nav>
+</div>
+<script src="../assets/docs.js"></script>
+</body>
+</html>

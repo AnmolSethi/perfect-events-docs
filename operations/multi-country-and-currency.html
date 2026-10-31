@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Multi-Country &amp; Multi-Currency — PerfectEvents Documentation</title>
+<meta name="description" content="Pricing, tax, fees, and payment methods, all resolved per currency and per country — never one hard-coded assumption for the whole platform.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="icon" type="image/png" href="../assets/mark.png">
+<link rel="stylesheet" href="../assets/docs.css">
+
+</head>
+<body data-root="..">
+<header class="docs-topbar">
+  <button class="docs-menu-toggle" type="button" aria-label="Toggle navigation">&#9776;</button>
+  <a class="docs-brand" href="../index.html"><img src="../assets/mark.png" alt="" width="28" height="28"><span class="eyebrow">PerfectEvents</span>Documentation</a>
+  <div class="docs-search">
+    <input type="search" placeholder="Search the docs…" autocomplete="off" aria-label="Search documentation">
+    <div class="docs-search-results"></div>
+  </div>
+</header>
+<div class="docs-shell">
+  <nav class="docs-sidebar"><div class="docs-sidebar-group"><h3>Getting Started</h3><ul><li><a class="nav-link" href="../getting-started/overview.html">Overview</a></li><li><a class="nav-link" href="../getting-started/server-requirements.html">Server Requirements</a></li><li><a class="nav-link" href="../getting-started/whats-in-the-box.html">What&#039;s in the Box</a></li><li><a class="nav-link" href="../getting-started/admin-vs-rebuild-boundary.html">Admin vs. Rebuild</a></li></ul></div><div class="docs-sidebar-group"><h3>Installation</h3><ul><li><a class="nav-link" href="../installation/wizard-walkthrough.html">Installation Wizard Walkthrough</a></li><li><a class="nav-link" href="../installation/cpanel.html">Installing on cPanel / Shared Hosting</a></li><li><a class="nav-link" href="../installation/vps.html">Installing on a VPS</a></li><li><a class="nav-link" href="../installation/subdirectory-install.html">Installing in a Subdirectory</a></li><li><a class="nav-link" href="../installation/troubleshooting-installer.html">Troubleshooting the Installer</a></li><li><a class="nav-link" href="../installation/post-install-security-checklist.html">Post-Install Security Checklist</a></li></ul></div><div class="docs-sidebar-group"><h3>Configuration</h3><ul><li><a class="nav-link" href="../configuration/environment-variables.html">Environment Variables</a></li><li><a class="nav-link" href="../configuration/cron-and-queues.html">Cron &amp; Queue Workers</a></li><li><a class="nav-link" href="../configuration/storage-and-s3.html">Storage &amp; S3</a></li><li><a class="nav-link" href="../configuration/cache.html">Cache</a></li><li><a class="nav-link" href="../configuration/https.html">HTTPS</a></li></ul></div><div class="docs-sidebar-group"><h3>Integrations</h3><ul><li><a class="nav-link" href="../integrations/stripe.html">Stripe</a></li><li><a class="nav-link" href="../integrations/paypal.html">PayPal</a></li><li><a class="nav-link" href="../integrations/razorpay.html">Razorpay</a></li><li><a class="nav-link" href="../integrations/paystack.html">Paystack</a></li><li><a class="nav-link" href="../integrations/email-smtp.html">Email (SMTP)</a></li><li><a class="nav-link" href="../integrations/sms.html">SMS (Twilio)</a></li><li><a class="nav-link" href="../integrations/social-login.html">Social Login</a></li><li><a class="nav-link" href="../integrations/firebase-and-push.html">Firebase &amp; Push Notifications</a></li></ul></div><div class="docs-sidebar-group"><h3>Operations</h3><ul><li><a class="nav-link" href="../operations/admin-tour.html">Admin Panel Tour</a></li><li><a class="nav-link" href="../operations/organizer-tour.html">Organizer Panel Tour</a></li><li><a class="nav-link" href="../operations/approvals.html">Approvals</a></li><li><a class="nav-link" href="../operations/refunds.html">Refunds</a></li><li><a class="nav-link" href="../operations/payouts.html">Payouts</a></li><li><a class="nav-link" href="../operations/coupons.html">Coupons</a></li><li><a class="nav-link" href="../operations/cms-and-homepage.html">CMS &amp; Homepage</a></li><li><a class="nav-link" href="../operations/notification-templates.html">Notification Templates</a></li><li><a class="nav-link" href="../operations/localization.html">Localization &amp; Adding a Language</a></li><li><a class="nav-link" href="../operations/backups.html">Backups</a></li><li><a class="nav-link is-active" href="../operations/multi-country-and-currency.html">Multi-Country &amp; Multi-Currency</a></li><li><a class="nav-link" href="../operations/modules.html">Modules</a></li><li><a class="nav-link" href="../operations/maps-and-venue-locations.html">Maps &amp; Venue Locations</a></li><li><a class="nav-link" href="../operations/door-check-in.html">Door Check-in &amp; Offline Use</a></li></ul></div><div class="docs-sidebar-group"><h3>Mobile Apps</h3><ul><li><a class="nav-link" href="../mobile-apps/toolchain-setup.html">Toolchain Setup</a></li><li><a class="nav-link" href="../mobile-apps/project-structure.html">Project Structure</a></li><li><a class="nav-link" href="../mobile-apps/config-files.html">Config Files</a></li><li><a class="nav-link" href="../mobile-apps/rebranding-the-apps.html">Rebranding the Apps</a></li><li><a class="nav-link" href="../mobile-apps/admin-configurable-vs-rebuild.html">Admin-Configurable vs. Rebuild</a></li><li><a class="nav-link" href="../mobile-apps/building-android.html">Building Android (AAB)</a></li><li><a class="nav-link" href="../mobile-apps/building-ios.html">Building iOS (IPA)</a></li><li><a class="nav-link" href="../mobile-apps/play-store-submission.html">Play Store Submission</a></li><li><a class="nav-link" href="../mobile-apps/app-store-submission.html">App Store Submission</a></li><li><a class="nav-link" href="../mobile-apps/common-rejections.html">Common Rejections</a></li></ul></div><div class="docs-sidebar-group"><h3>Maintenance</h3><ul><li><a class="nav-link" href="../maintenance/updating-the-product.html">Updating the Product</a></li><li><a class="nav-link" href="../maintenance/changelog.html">Reading the Changelog</a></li><li><a class="nav-link" href="../maintenance/backup-restore.html">Backup &amp; Restore Around an Update</a></li><li><a class="nav-link" href="../maintenance/preserving-customizations.html">Preserving Customizations</a></li></ul></div><div class="docs-sidebar-group"><h3>Reference</h3><ul><li><a class="nav-link" href="../reference/api-overview.html">API Overview</a></li><li><a class="nav-link" href="../reference/settings-reference.html">Settings Reference</a></li><li><a class="nav-link" href="../reference/permissions-matrix.html">Permissions Matrix</a></li><li><a class="nav-link" href="../reference/troubleshooting-index.html">Troubleshooting Index</a></li><li><a class="nav-link" href="../reference/faq.html">FAQ</a></li><li><a class="nav-link" href="../reference/credits.html">Credits &amp;amp; Licenses</a></li></ul></div></nav>
+  <main class="docs-main"><p class="docs-breadcrumb"><a href="../index.html">Documentation</a> / Operations</p><article class="docs-content"><h1>Multi-Country &amp; Multi-Currency</h1><p class="docs-dek">Pricing, tax, fees, and payment methods, all resolved per currency and per country — never one hard-coded assumption for the whole platform.</p><p>Everything money-related in this product is driven from two small reference tables — Admin →
+Currencies and Admin → Countries — plus the country-and-currency-specific overrides layered on top
+of them. A fresh install ships with just <strong>USD</strong> active and no country-specific
+overrides, and behaves exactly like a single-currency platform until you configure more. Nothing
+below is required reading for a single-country, single-currency install.</p>
+
+<h2 id="currencies">Currencies</h2>
+<p>Admin → Currencies is the source of truth for how money renders everywhere — symbol, decimal
+places, thousands/decimal separators, and whether the symbol sits to the left or right of the
+amount. Every platform (web, PDFs, emails, both Flutter apps) formats a given amount identically
+because they all read from this same table via <code>/api/v1/config</code>. Activate as many
+currencies as you like; organizers price each event's ticket types in whichever active currency
+they choose, and every ticket type on one event must share the same currency — checkout rejects a
+basket that somehow mixed them.</p>
+
+<h2 id="countries">Countries</h2>
+<p>Admin → Countries is a reference list (code, name, dial code) used by venue address forms, the
+buyer phone-number picker, and event discovery's country filter. It's pure reference data — adding
+a country here doesn't change any pricing or tax behavior by itself.</p>
+
+<h2 id="tax-rates">Tax Rates</h2>
+<p>Admin → Tax Rates lets you set a tax rate (VAT, GST, sales tax — whatever you label it),
+inclusive or exclusive, per country. At checkout, the applicable rate is looked up by the
+<strong>event's venue country</strong> — not the buyer's billing address, since this product doesn't
+collect one. An event with no venue, or a venue in a country with no configured rate, falls back to
+the single global rate in Admin → Settings → General. Whatever rate actually applied is stamped onto
+the order at checkout time, so changing a country's rate later never rewrites a past order's receipt.</p>
+<div class="callout callout-note">
+<span class="callout-title">Place-of-supply tax only</span>
+This resolves tax by where the event happens, which covers the common case (a ticketed event has a
+physical or nominal venue location). Buyer-location-based tax rules (e.g. some digital-services VAT
+regimes) aren't modeled — there's no buyer billing address anywhere in this product to base that on.
+</div>
+
+<h2 id="currency-fees">Currency Fees</h2>
+<p>Admin → Currency Fees overrides the platform service fee (percentage + fixed amount, normally set
+in Settings → General) for one specific currency. You'll usually only need the fixed-amount half: a
+flat "50" fixed fee is 50 cents in USD but a very different real amount in a currency with different
+decimal places (0 for JPY, 3 for BHD/KWD/OMR). Leave either number blank to keep using the general
+value for just that half.</p>
+
+<h2 id="organizer-defaults">Organizer defaults</h2>
+<p>An organizer's Profile page has an optional home country and default currency. Neither is
+required, and neither restricts what an organizer can actually do — they're pre-fills only: a new
+event's currency dropdown defaults to the organizer's own default currency instead of the platform
+default, once set.</p>
+
+<h2 id="payment-gateway-compatibility">Payment gateway compatibility</h2>
+<p>Each payment gateway declares which currencies it can actually settle — Stripe and PayPal accept
+any; Razorpay is INR-only; Paystack covers NGN/GHS/ZAR/KES/USD. Checkout only ever offers a gateway
+that supports the order's currency, and the payment layer itself rejects a mismatched attempt even
+if bypassed at the UI level — this can't be worked around by editing a Blade view or the Flutter app,
+since the compatibility list lives on the gateway class itself, not the presentation layer.</p>
+
+<h2 id="discovery-coupons">Discovery & coupons</h2>
+<p>Buyers can filter events by country in the public site and the customer app, alongside the
+existing city filter. Coupons follow one rule: a percentage coupon works across any currency; a
+fixed-amount coupon is scoped to one currency (chosen when you create it) and simply won't apply to
+an order in a different one.</p>
+
+<div class="callout callout-note">
+<span class="callout-title">Payouts stay manual regardless</span>
+None of the above changes how payouts work — see <a href="../operations/payouts.html">Payouts</a>. An organizer
+running events in more than one currency simply accumulates a separate balance per currency and
+requests payouts against each one; there's no currency conversion anywhere in this product.
+</div></article><nav class="docs-pagenav"><a class="prev" href="../operations/backups.html"><span class="dir">&larr; Previous</span>Backups</a><a class="next" href="../operations/modules.html"><span class="dir">Next &rarr;</span>Modules</a></nav></main>
+  <nav class="docs-toc"><h3>On this page</h3><ul><li><a href="#currencies">Currencies</a></li><li><a href="#countries">Countries</a></li><li><a href="#tax-rates">Tax Rates</a></li><li><a href="#currency-fees">Currency Fees</a></li><li><a href="#organizer-defaults">Organizer defaults</a></li><li><a href="#payment-gateway-compatibility">Payment gateway compatibility</a></li><li><a href="#discovery-coupons">Discovery &amp; coupons</a></li></ul></nav>
+</div>
+<script src="../assets/docs.js"></script>
+</body>
+</html>

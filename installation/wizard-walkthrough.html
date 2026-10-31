@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Installation Wizard Walkthrough — PerfectEvents Documentation</title>
+<meta name="description" content="Every step of the install wizard, in order, and what it&#039;s doing behind the scenes.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="icon" type="image/png" href="../assets/mark.png">
+<link rel="stylesheet" href="../assets/docs.css">
+
+</head>
+<body data-root="..">
+<header class="docs-topbar">
+  <button class="docs-menu-toggle" type="button" aria-label="Toggle navigation">&#9776;</button>
+  <a class="docs-brand" href="../index.html"><img src="../assets/mark.png" alt="" width="28" height="28"><span class="eyebrow">PerfectEvents</span>Documentation</a>
+  <div class="docs-search">
+    <input type="search" placeholder="Search the docs…" autocomplete="off" aria-label="Search documentation">
+    <div class="docs-search-results"></div>
+  </div>
+</header>
+<div class="docs-shell">
+  <nav class="docs-sidebar"><div class="docs-sidebar-group"><h3>Getting Started</h3><ul><li><a class="nav-link" href="../getting-started/overview.html">Overview</a></li><li><a class="nav-link" href="../getting-started/server-requirements.html">Server Requirements</a></li><li><a class="nav-link" href="../getting-started/whats-in-the-box.html">What&#039;s in the Box</a></li><li><a class="nav-link" href="../getting-started/admin-vs-rebuild-boundary.html">Admin vs. Rebuild</a></li></ul></div><div class="docs-sidebar-group"><h3>Installation</h3><ul><li><a class="nav-link is-active" href="../installation/wizard-walkthrough.html">Installation Wizard Walkthrough</a></li><li><a class="nav-link" href="../installation/cpanel.html">Installing on cPanel / Shared Hosting</a></li><li><a class="nav-link" href="../installation/vps.html">Installing on a VPS</a></li><li><a class="nav-link" href="../installation/subdirectory-install.html">Installing in a Subdirectory</a></li><li><a class="nav-link" href="../installation/troubleshooting-installer.html">Troubleshooting the Installer</a></li><li><a class="nav-link" href="../installation/post-install-security-checklist.html">Post-Install Security Checklist</a></li></ul></div><div class="docs-sidebar-group"><h3>Configuration</h3><ul><li><a class="nav-link" href="../configuration/environment-variables.html">Environment Variables</a></li><li><a class="nav-link" href="../configuration/cron-and-queues.html">Cron &amp; Queue Workers</a></li><li><a class="nav-link" href="../configuration/storage-and-s3.html">Storage &amp; S3</a></li><li><a class="nav-link" href="../configuration/cache.html">Cache</a></li><li><a class="nav-link" href="../configuration/https.html">HTTPS</a></li></ul></div><div class="docs-sidebar-group"><h3>Integrations</h3><ul><li><a class="nav-link" href="../integrations/stripe.html">Stripe</a></li><li><a class="nav-link" href="../integrations/paypal.html">PayPal</a></li><li><a class="nav-link" href="../integrations/razorpay.html">Razorpay</a></li><li><a class="nav-link" href="../integrations/paystack.html">Paystack</a></li><li><a class="nav-link" href="../integrations/email-smtp.html">Email (SMTP)</a></li><li><a class="nav-link" href="../integrations/sms.html">SMS (Twilio)</a></li><li><a class="nav-link" href="../integrations/social-login.html">Social Login</a></li><li><a class="nav-link" href="../integrations/firebase-and-push.html">Firebase &amp; Push Notifications</a></li></ul></div><div class="docs-sidebar-group"><h3>Operations</h3><ul><li><a class="nav-link" href="../operations/admin-tour.html">Admin Panel Tour</a></li><li><a class="nav-link" href="../operations/organizer-tour.html">Organizer Panel Tour</a></li><li><a class="nav-link" href="../operations/approvals.html">Approvals</a></li><li><a class="nav-link" href="../operations/refunds.html">Refunds</a></li><li><a class="nav-link" href="../operations/payouts.html">Payouts</a></li><li><a class="nav-link" href="../operations/coupons.html">Coupons</a></li><li><a class="nav-link" href="../operations/cms-and-homepage.html">CMS &amp; Homepage</a></li><li><a class="nav-link" href="../operations/notification-templates.html">Notification Templates</a></li><li><a class="nav-link" href="../operations/localization.html">Localization &amp; Adding a Language</a></li><li><a class="nav-link" href="../operations/backups.html">Backups</a></li><li><a class="nav-link" href="../operations/multi-country-and-currency.html">Multi-Country &amp; Multi-Currency</a></li><li><a class="nav-link" href="../operations/modules.html">Modules</a></li><li><a class="nav-link" href="../operations/maps-and-venue-locations.html">Maps &amp; Venue Locations</a></li><li><a class="nav-link" href="../operations/door-check-in.html">Door Check-in &amp; Offline Use</a></li></ul></div><div class="docs-sidebar-group"><h3>Mobile Apps</h3><ul><li><a class="nav-link" href="../mobile-apps/toolchain-setup.html">Toolchain Setup</a></li><li><a class="nav-link" href="../mobile-apps/project-structure.html">Project Structure</a></li><li><a class="nav-link" href="../mobile-apps/config-files.html">Config Files</a></li><li><a class="nav-link" href="../mobile-apps/rebranding-the-apps.html">Rebranding the Apps</a></li><li><a class="nav-link" href="../mobile-apps/admin-configurable-vs-rebuild.html">Admin-Configurable vs. Rebuild</a></li><li><a class="nav-link" href="../mobile-apps/building-android.html">Building Android (AAB)</a></li><li><a class="nav-link" href="../mobile-apps/building-ios.html">Building iOS (IPA)</a></li><li><a class="nav-link" href="../mobile-apps/play-store-submission.html">Play Store Submission</a></li><li><a class="nav-link" href="../mobile-apps/app-store-submission.html">App Store Submission</a></li><li><a class="nav-link" href="../mobile-apps/common-rejections.html">Common Rejections</a></li></ul></div><div class="docs-sidebar-group"><h3>Maintenance</h3><ul><li><a class="nav-link" href="../maintenance/updating-the-product.html">Updating the Product</a></li><li><a class="nav-link" href="../maintenance/changelog.html">Reading the Changelog</a></li><li><a class="nav-link" href="../maintenance/backup-restore.html">Backup &amp; Restore Around an Update</a></li><li><a class="nav-link" href="../maintenance/preserving-customizations.html">Preserving Customizations</a></li></ul></div><div class="docs-sidebar-group"><h3>Reference</h3><ul><li><a class="nav-link" href="../reference/api-overview.html">API Overview</a></li><li><a class="nav-link" href="../reference/settings-reference.html">Settings Reference</a></li><li><a class="nav-link" href="../reference/permissions-matrix.html">Permissions Matrix</a></li><li><a class="nav-link" href="../reference/troubleshooting-index.html">Troubleshooting Index</a></li><li><a class="nav-link" href="../reference/faq.html">FAQ</a></li><li><a class="nav-link" href="../reference/credits.html">Credits &amp;amp; Licenses</a></li></ul></div></nav>
+  <main class="docs-main"><p class="docs-breadcrumb"><a href="../index.html">Documentation</a> / Installation</p><article class="docs-content"><h1>Installation Wizard Walkthrough</h1><p class="docs-dek">Every step of the install wizard, in order, and what it&#039;s doing behind the scenes.</p><p>Point your domain (or a subdirectory — see <a href="../installation/subdirectory-install.html">Subdirectory
+install</a>) at <code>script/public</code> and visit it in a browser. Until the app is installed,
+every request redirects to <code>/install</code>; once installed, <code>/install/*</code> stops
+existing entirely (404) — there's no separate "delete the installer folder" step to remember.</p>
+
+<p>The wizard is safe to re-run or resume: nothing is written to your real database or <code>.env</code>
+until the final "Run" step, and that step itself is idempotent (safe to retry if it fails partway —
+migrations skip what's already applied, settings are upserted, not duplicated).</p>
+
+<p>The wizard has eight steps. Each one is shown below as it looks on a fresh install.</p>
+
+<h2 id="1-welcome">1. Welcome</h2>
+<p>A short intro. Have your database name, username and password ready before you continue.</p>
+<figure><img src="../assets/screens/install-1-welcome.webp" alt="Installer welcome step" width="1280" height="860" loading="lazy"></figure>
+
+<h2 id="2-requirements">2. Requirements</h2>
+<p>A read-only checklist: PHP ≥ 8.3 and the required extensions
+(<code>pdo_mysql, mbstring, openssl, curl, zip, fileinfo, bcmath, intl, tokenizer, xml</code>, plus
+either <code>GD</code> or <code>Imagick</code>). You can't continue until every required item is
+green — see <a href="../getting-started/server-requirements.html">Server requirements</a> if
+something's missing. <code>proc_open</code> and <code>symlink</code> are checked too but don't block
+you; the wizard copies files instead if <code>symlink()</code> isn't available on your host.</p>
+<figure><img src="../assets/screens/install-2-requirements.webp" alt="Installer requirements checklist" width="1280" height="860" loading="lazy"></figure>
+
+<h2 id="3-permissions">3. Permissions</h2>
+<p>Checks that <code>storage/</code>, <code>bootstrap/cache/</code> and <code>.env</code> (or the app
+folder, if <code>.env</code> doesn't exist yet) are writable by the web server. If something is red,
+set that folder to <code>775</code> in your file manager or with <code>chmod</code>, then reload.</p>
+<figure><img src="../assets/screens/install-3-permissions.webp" alt="Installer folder permissions check" width="1280" height="860" loading="lazy"></figure>
+
+<h2 id="4-database">4. Database</h2>
+<p>Host, port, database name, username and password. The database must already exist — create it
+first in cPanel → MySQL Databases (or your host's equivalent). When you press Continue the wizard
+opens a test connection; nothing is written yet.</p>
+<figure><img src="../assets/screens/install-4-database.webp" alt="Installer database step" width="1280" height="860" loading="lazy"></figure>
+
+<h2 id="5-application">5. Application</h2>
+<p>Your site name, its full URL (no trailing slash), timezone, default language and default
+currency. More languages and currencies can be added later from Admin.</p>
+<figure><img src="../assets/screens/install-5-application.webp" alt="Installer application step" width="1280" height="860" loading="lazy"></figure>
+
+<h2 id="6-admin-account">6. Admin account</h2>
+<p>The first admin's name, email and password. This account is created already verified, so you
+can sign in straight away.</p>
+<figure><img src="../assets/screens/install-6-admin.webp" alt="Installer admin account step" width="1280" height="860" loading="lazy"></figure>
+
+<h2 id="7-run">7. Run</h2>
+<p>Press <strong>Run installation</strong>. The wizard writes <code>.env</code>, runs the migrations, seeds the
+database, applies your language and currency, creates your admin account and links storage. It
+usually takes under a minute. Every part is safe to retry if it fails partway.</p>
+<figure><img src="../assets/screens/install-7-run.webp" alt="Installer run step" width="1280" height="860" loading="lazy"></figure>
+
+<h2 id="8-done">8. Done</h2>
+<p>You get your site and login links, plus the exact cron line to copy for your server — set it up
+now (see <a href="../configuration/cron-and-queues.html">Cron &amp; queue workers</a>). Then sign in
+and continue in <a href="../operations/admin-tour.html">the Admin panel</a>.</p>
+<figure><img src="../assets/screens/install-8-done.webp" alt="Installer done screen with site links and the cron line" width="1280" height="860" loading="lazy"></figure>
+
+<div class="callout callout-tip">
+<span class="callout-title">Mail and storage come next</span>
+The wizard doesn't ask for mail or file storage. The site works without them; set them up
+afterwards from Admin → Settings → <a href="../integrations/email-smtp.html">Mail</a> and
+<a href="../configuration/storage-and-s3.html">Storage</a>. The Admin overview reminds you until
+you do.
+</div>
+
+<h2 id="how-installed-is-tracked">How "installed" is tracked</h2>
+<p>Two things both have to be true for the app to consider itself installed: a lock file at
+<code>storage/app/installed.json</code>, and a row in the <code>installations</code> table (install date and version). If either is missing, every request
+bounces back to the wizard.</p></article><nav class="docs-pagenav"><a class="prev" href="../getting-started/admin-vs-rebuild-boundary.html"><span class="dir">&larr; Previous</span>Admin vs. Rebuild</a><a class="next" href="../installation/cpanel.html"><span class="dir">Next &rarr;</span>Installing on cPanel / Shared Hosting</a></nav></main>
+  <nav class="docs-toc"><h3>On this page</h3><ul><li><a href="#1-welcome">1. Welcome</a></li><li><a href="#2-requirements">2. Requirements</a></li><li><a href="#3-permissions">3. Permissions</a></li><li><a href="#4-database">4. Database</a></li><li><a href="#5-application">5. Application</a></li><li><a href="#6-admin-account">6. Admin account</a></li><li><a href="#7-run">7. Run</a></li><li><a href="#8-done">8. Done</a></li><li><a href="#how-installed-is-tracked">How &quot;installed&quot; is tracked</a></li></ul></nav>
+</div>
+<script src="../assets/docs.js"></script>
+</body>
+</html>

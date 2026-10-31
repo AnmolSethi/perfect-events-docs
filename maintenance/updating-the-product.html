@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Updating the Product — PerfectEvents Documentation</title>
+<meta name="description" content="Back up, upload the signed update package in Admin → System → Updates, done.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="icon" type="image/png" href="../assets/mark.png">
+<link rel="stylesheet" href="../assets/docs.css">
+
+</head>
+<body data-root="..">
+<header class="docs-topbar">
+  <button class="docs-menu-toggle" type="button" aria-label="Toggle navigation">&#9776;</button>
+  <a class="docs-brand" href="../index.html"><img src="../assets/mark.png" alt="" width="28" height="28"><span class="eyebrow">PerfectEvents</span>Documentation</a>
+  <div class="docs-search">
+    <input type="search" placeholder="Search the docs…" autocomplete="off" aria-label="Search documentation">
+    <div class="docs-search-results"></div>
+  </div>
+</header>
+<div class="docs-shell">
+  <nav class="docs-sidebar"><div class="docs-sidebar-group"><h3>Getting Started</h3><ul><li><a class="nav-link" href="../getting-started/overview.html">Overview</a></li><li><a class="nav-link" href="../getting-started/server-requirements.html">Server Requirements</a></li><li><a class="nav-link" href="../getting-started/whats-in-the-box.html">What&#039;s in the Box</a></li><li><a class="nav-link" href="../getting-started/admin-vs-rebuild-boundary.html">Admin vs. Rebuild</a></li></ul></div><div class="docs-sidebar-group"><h3>Installation</h3><ul><li><a class="nav-link" href="../installation/wizard-walkthrough.html">Installation Wizard Walkthrough</a></li><li><a class="nav-link" href="../installation/cpanel.html">Installing on cPanel / Shared Hosting</a></li><li><a class="nav-link" href="../installation/vps.html">Installing on a VPS</a></li><li><a class="nav-link" href="../installation/subdirectory-install.html">Installing in a Subdirectory</a></li><li><a class="nav-link" href="../installation/troubleshooting-installer.html">Troubleshooting the Installer</a></li><li><a class="nav-link" href="../installation/post-install-security-checklist.html">Post-Install Security Checklist</a></li></ul></div><div class="docs-sidebar-group"><h3>Configuration</h3><ul><li><a class="nav-link" href="../configuration/environment-variables.html">Environment Variables</a></li><li><a class="nav-link" href="../configuration/cron-and-queues.html">Cron &amp; Queue Workers</a></li><li><a class="nav-link" href="../configuration/storage-and-s3.html">Storage &amp; S3</a></li><li><a class="nav-link" href="../configuration/cache.html">Cache</a></li><li><a class="nav-link" href="../configuration/https.html">HTTPS</a></li></ul></div><div class="docs-sidebar-group"><h3>Integrations</h3><ul><li><a class="nav-link" href="../integrations/stripe.html">Stripe</a></li><li><a class="nav-link" href="../integrations/paypal.html">PayPal</a></li><li><a class="nav-link" href="../integrations/razorpay.html">Razorpay</a></li><li><a class="nav-link" href="../integrations/paystack.html">Paystack</a></li><li><a class="nav-link" href="../integrations/email-smtp.html">Email (SMTP)</a></li><li><a class="nav-link" href="../integrations/sms.html">SMS (Twilio)</a></li><li><a class="nav-link" href="../integrations/social-login.html">Social Login</a></li><li><a class="nav-link" href="../integrations/firebase-and-push.html">Firebase &amp; Push Notifications</a></li></ul></div><div class="docs-sidebar-group"><h3>Operations</h3><ul><li><a class="nav-link" href="../operations/admin-tour.html">Admin Panel Tour</a></li><li><a class="nav-link" href="../operations/organizer-tour.html">Organizer Panel Tour</a></li><li><a class="nav-link" href="../operations/approvals.html">Approvals</a></li><li><a class="nav-link" href="../operations/refunds.html">Refunds</a></li><li><a class="nav-link" href="../operations/payouts.html">Payouts</a></li><li><a class="nav-link" href="../operations/coupons.html">Coupons</a></li><li><a class="nav-link" href="../operations/cms-and-homepage.html">CMS &amp; Homepage</a></li><li><a class="nav-link" href="../operations/notification-templates.html">Notification Templates</a></li><li><a class="nav-link" href="../operations/localization.html">Localization &amp; Adding a Language</a></li><li><a class="nav-link" href="../operations/backups.html">Backups</a></li><li><a class="nav-link" href="../operations/multi-country-and-currency.html">Multi-Country &amp; Multi-Currency</a></li><li><a class="nav-link" href="../operations/modules.html">Modules</a></li><li><a class="nav-link" href="../operations/maps-and-venue-locations.html">Maps &amp; Venue Locations</a></li><li><a class="nav-link" href="../operations/door-check-in.html">Door Check-in &amp; Offline Use</a></li></ul></div><div class="docs-sidebar-group"><h3>Mobile Apps</h3><ul><li><a class="nav-link" href="../mobile-apps/toolchain-setup.html">Toolchain Setup</a></li><li><a class="nav-link" href="../mobile-apps/project-structure.html">Project Structure</a></li><li><a class="nav-link" href="../mobile-apps/config-files.html">Config Files</a></li><li><a class="nav-link" href="../mobile-apps/rebranding-the-apps.html">Rebranding the Apps</a></li><li><a class="nav-link" href="../mobile-apps/admin-configurable-vs-rebuild.html">Admin-Configurable vs. Rebuild</a></li><li><a class="nav-link" href="../mobile-apps/building-android.html">Building Android (AAB)</a></li><li><a class="nav-link" href="../mobile-apps/building-ios.html">Building iOS (IPA)</a></li><li><a class="nav-link" href="../mobile-apps/play-store-submission.html">Play Store Submission</a></li><li><a class="nav-link" href="../mobile-apps/app-store-submission.html">App Store Submission</a></li><li><a class="nav-link" href="../mobile-apps/common-rejections.html">Common Rejections</a></li></ul></div><div class="docs-sidebar-group"><h3>Maintenance</h3><ul><li><a class="nav-link is-active" href="../maintenance/updating-the-product.html">Updating the Product</a></li><li><a class="nav-link" href="../maintenance/changelog.html">Reading the Changelog</a></li><li><a class="nav-link" href="../maintenance/backup-restore.html">Backup &amp; Restore Around an Update</a></li><li><a class="nav-link" href="../maintenance/preserving-customizations.html">Preserving Customizations</a></li></ul></div><div class="docs-sidebar-group"><h3>Reference</h3><ul><li><a class="nav-link" href="../reference/api-overview.html">API Overview</a></li><li><a class="nav-link" href="../reference/settings-reference.html">Settings Reference</a></li><li><a class="nav-link" href="../reference/permissions-matrix.html">Permissions Matrix</a></li><li><a class="nav-link" href="../reference/troubleshooting-index.html">Troubleshooting Index</a></li><li><a class="nav-link" href="../reference/faq.html">FAQ</a></li><li><a class="nav-link" href="../reference/credits.html">Credits &amp;amp; Licenses</a></li></ul></div></nav>
+  <main class="docs-main"><p class="docs-breadcrumb"><a href="../index.html">Documentation</a> / Maintenance</p><article class="docs-content"><h1>Updating the Product</h1><p class="docs-dek">Back up, upload the signed update package in Admin → System → Updates, done.</p><p>Every release comes with a ready-made update package. You install it from the admin panel — no
+FTP, no SSH, no re-running the install wizard, and your data, uploads and <code>.env</code> are
+never touched.</p>
+
+<h2 id="1-find-the-package">1. Find the package</h2>
+<p>In the release download, open the <code>Updates/</code> folder. It holds:</p>
+<table>
+<tr><th>File</th><th>What it's for</th></tr>
+<tr><td><code>perfect-events-vX-to-vY.zip</code></td><td>The server update. Installs over exactly version
+<strong>X</strong> and takes you to <strong>Y</strong>. Upload this one in Admin.</td></tr>
+<tr><td><code>perfect-events-mobile-vX-to-vY.zip</code></td><td>Only present when the apps changed: the
+changed <code>flutter/</code> files plus a <code>DELETED.txt</code>. See
+<a href="#mobile-apps">Mobile apps</a> below.</td></tr>
+</table>
+<p>Your installed version is shown at the top of <strong>Admin → System → Updates</strong>. If you're
+more than one release behind, install each package in turn (X→Y, then Y→Z); a package refuses to
+install over any version other than the one it was built from.</p>
+
+<h2 id="2-read-the-changelog">2. Read the changelog</h2>
+<p>Check <a href="../maintenance/changelog.html">the changelog</a> for every version you're
+crossing. Anything you have to do by hand — a new cron line, a raised PHP version, rebuilding the
+apps — is listed under that version's "Updating" note.</p>
+
+<h2 id="3-back-up">3. Back up</h2>
+<p>Take a database dump and a copy of <code>storage/app/public</code> (skip that if your uploads
+live on S3). See <a href="../operations/backups.html">Backups</a>. The updater backs up and
+restores the <em>files</em> it replaces by itself, but database changes can't be rolled back —
+that's what your dump is for. The Updates page won't start until you tick "I have a current
+backup".</p>
+
+<h2 id="4-install">4. Install</h2>
+<ol>
+<li>Go to <strong>Admin → System → Updates</strong>.</li>
+<li>Tick the backup confirmation, choose the <code>perfect-events-vX-to-vY.zip</code> file and click
+<strong>Install</strong>.</li>
+<li>Keep the page open while it runs. It works in three short steps, one request each, so it fits
+inside a shared host's time limits:
+  <ul>
+  <li><strong>Verifying</strong> — checks the package's signature, that it's newer than what you
+  run and built from your version, that your server meets its requirements, that every file it
+  will replace is writable, and that there's enough disk space.</li>
+  <li><strong>Applying</strong> — turns on maintenance mode, backs up every file it's about to
+  change, then swaps in the new ones.</li>
+  <li><strong>Migrating</strong> — runs the database migrations, clears caches, records the new
+  version and turns maintenance mode off.</li>
+  </ul>
+</li>
+</ol>
+<p>If the page stops moving (a closed tab, a timed-out request), just reload it: an interrupted run
+resumes, or is rolled back to the previous files if it can't continue.</p>
+
+<div class="callout callout-tip">
+<span class="callout-title">Only packages signed by the author install</span>
+Each package is signed, and your copy checks the signature before it unpacks anything. A file that
+was altered, or didn't come from the official release, is rejected with "The package signature is
+missing or invalid".
+</div>
+
+<h2 id="if-an-update-is-refused">If an update is refused</h2>
+<table>
+<tr><th>Message</th><th>What to do</th></tr>
+<tr><td>Version … is not newer than the installed …</td><td>You've already installed it. Nothing to do.</td></tr>
+<tr><td>This incremental package applies to X, but Y is installed</td><td>You picked the wrong package. Use the one whose name starts with your installed version.</td></tr>
+<tr><td>Requirements not met</td><td>The release needs a newer PHP version or extension. Upgrade it in your hosting panel, then retry.</td></tr>
+<tr><td>These files were changed since the last update…</td><td>You edited files the update also changes. Copy your edits somewhere safe, restore the originals, update, then re-apply them — see <a href="../maintenance/preserving-customizations.html">Preserving customizations</a>.</td></tr>
+<tr><td>The web server can't write to…</td><td>Fix the permissions on the listed files so the web server user owns them, then retry.</td></tr>
+<tr><td>Not enough free disk space</td><td>The updater needs room for the new files and a backup of the old ones. Free some space, then retry.</td></tr>
+<tr><td>The upload is rejected as too large</td><td>Packages up to 12 MB upload from the page. If your PHP <code>upload_max_filesize</code> / <code>post_max_size</code> are lower, raise them to at least 16M.</td></tr>
+</table>
+<p>If a run fails after it started replacing files, every file is put back automatically and the
+page tells you so. In the rare case that restoring fails too, the site stays in maintenance mode and
+the message names the folder holding the backup — copy those files back over the install, then run
+<code>php artisan up</code>.</p>
+
+<h2 id="built-in-modules">Built-in modules</h2>
+<p>Payments, SMS and Software Update are part of the product and update with it — they have no
+separate update or licence of their own. See <a href="../operations/modules.html">Modules</a>.</p>
+
+<h2 id="mobile-apps">Mobile apps</h2>
+<p>The server update never changes the apps already installed on people's phones. When a release
+changes the apps, the changelog says so: apply the files from the mobile zip to your copy of
+<code>flutter/</code> (delete the paths listed in <code>DELETED.txt</code>), re-apply your rebrand
+if it touched any of them, then rebuild and submit to the stores as usual —
+<a href="../mobile-apps/building-android.html">Android</a>,
+<a href="../mobile-apps/building-ios.html">iOS</a>. Raise the build number each time; the stores
+reject one they've seen before.</p>
+
+<h2 id="verify">Verify</h2>
+<p>Load the site, log into Admin, and place a test order if you have a gateway in test mode. Check
+that cron is still running (the heartbeat on Admin → System).</p></article><nav class="docs-pagenav"><a class="prev" href="../mobile-apps/common-rejections.html"><span class="dir">&larr; Previous</span>Common Rejections</a><a class="next" href="../maintenance/changelog.html"><span class="dir">Next &rarr;</span>Reading the Changelog</a></nav></main>
+  <nav class="docs-toc"><h3>On this page</h3><ul><li><a href="#1-find-the-package">1. Find the package</a></li><li><a href="#2-read-the-changelog">2. Read the changelog</a></li><li><a href="#3-back-up">3. Back up</a></li><li><a href="#4-install">4. Install</a></li><li><a href="#if-an-update-is-refused">If an update is refused</a></li><li><a href="#built-in-modules">Built-in modules</a></li><li><a href="#mobile-apps">Mobile apps</a></li><li><a href="#verify">Verify</a></li></ul></nav>
+</div>
+<script src="../assets/docs.js"></script>
+</body>
+</html>

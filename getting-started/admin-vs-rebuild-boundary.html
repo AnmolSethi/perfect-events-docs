@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin vs. Rebuild — PerfectEvents Documentation</title>
+<meta name="description" content="What you can change from a panel, and what needs a code change — read this before you start customizing.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="icon" type="image/png" href="../assets/mark.png">
+<link rel="stylesheet" href="../assets/docs.css">
+
+</head>
+<body data-root="..">
+<header class="docs-topbar">
+  <button class="docs-menu-toggle" type="button" aria-label="Toggle navigation">&#9776;</button>
+  <a class="docs-brand" href="../index.html"><img src="../assets/mark.png" alt="" width="28" height="28"><span class="eyebrow">PerfectEvents</span>Documentation</a>
+  <div class="docs-search">
+    <input type="search" placeholder="Search the docs…" autocomplete="off" aria-label="Search documentation">
+    <div class="docs-search-results"></div>
+  </div>
+</header>
+<div class="docs-shell">
+  <nav class="docs-sidebar"><div class="docs-sidebar-group"><h3>Getting Started</h3><ul><li><a class="nav-link" href="../getting-started/overview.html">Overview</a></li><li><a class="nav-link" href="../getting-started/server-requirements.html">Server Requirements</a></li><li><a class="nav-link" href="../getting-started/whats-in-the-box.html">What&#039;s in the Box</a></li><li><a class="nav-link is-active" href="../getting-started/admin-vs-rebuild-boundary.html">Admin vs. Rebuild</a></li></ul></div><div class="docs-sidebar-group"><h3>Installation</h3><ul><li><a class="nav-link" href="../installation/wizard-walkthrough.html">Installation Wizard Walkthrough</a></li><li><a class="nav-link" href="../installation/cpanel.html">Installing on cPanel / Shared Hosting</a></li><li><a class="nav-link" href="../installation/vps.html">Installing on a VPS</a></li><li><a class="nav-link" href="../installation/subdirectory-install.html">Installing in a Subdirectory</a></li><li><a class="nav-link" href="../installation/troubleshooting-installer.html">Troubleshooting the Installer</a></li><li><a class="nav-link" href="../installation/post-install-security-checklist.html">Post-Install Security Checklist</a></li></ul></div><div class="docs-sidebar-group"><h3>Configuration</h3><ul><li><a class="nav-link" href="../configuration/environment-variables.html">Environment Variables</a></li><li><a class="nav-link" href="../configuration/cron-and-queues.html">Cron &amp; Queue Workers</a></li><li><a class="nav-link" href="../configuration/storage-and-s3.html">Storage &amp; S3</a></li><li><a class="nav-link" href="../configuration/cache.html">Cache</a></li><li><a class="nav-link" href="../configuration/https.html">HTTPS</a></li></ul></div><div class="docs-sidebar-group"><h3>Integrations</h3><ul><li><a class="nav-link" href="../integrations/stripe.html">Stripe</a></li><li><a class="nav-link" href="../integrations/paypal.html">PayPal</a></li><li><a class="nav-link" href="../integrations/razorpay.html">Razorpay</a></li><li><a class="nav-link" href="../integrations/paystack.html">Paystack</a></li><li><a class="nav-link" href="../integrations/email-smtp.html">Email (SMTP)</a></li><li><a class="nav-link" href="../integrations/sms.html">SMS (Twilio)</a></li><li><a class="nav-link" href="../integrations/social-login.html">Social Login</a></li><li><a class="nav-link" href="../integrations/firebase-and-push.html">Firebase &amp; Push Notifications</a></li></ul></div><div class="docs-sidebar-group"><h3>Operations</h3><ul><li><a class="nav-link" href="../operations/admin-tour.html">Admin Panel Tour</a></li><li><a class="nav-link" href="../operations/organizer-tour.html">Organizer Panel Tour</a></li><li><a class="nav-link" href="../operations/approvals.html">Approvals</a></li><li><a class="nav-link" href="../operations/refunds.html">Refunds</a></li><li><a class="nav-link" href="../operations/payouts.html">Payouts</a></li><li><a class="nav-link" href="../operations/coupons.html">Coupons</a></li><li><a class="nav-link" href="../operations/cms-and-homepage.html">CMS &amp; Homepage</a></li><li><a class="nav-link" href="../operations/notification-templates.html">Notification Templates</a></li><li><a class="nav-link" href="../operations/localization.html">Localization &amp; Adding a Language</a></li><li><a class="nav-link" href="../operations/backups.html">Backups</a></li><li><a class="nav-link" href="../operations/multi-country-and-currency.html">Multi-Country &amp; Multi-Currency</a></li><li><a class="nav-link" href="../operations/modules.html">Modules</a></li><li><a class="nav-link" href="../operations/maps-and-venue-locations.html">Maps &amp; Venue Locations</a></li><li><a class="nav-link" href="../operations/door-check-in.html">Door Check-in &amp; Offline Use</a></li></ul></div><div class="docs-sidebar-group"><h3>Mobile Apps</h3><ul><li><a class="nav-link" href="../mobile-apps/toolchain-setup.html">Toolchain Setup</a></li><li><a class="nav-link" href="../mobile-apps/project-structure.html">Project Structure</a></li><li><a class="nav-link" href="../mobile-apps/config-files.html">Config Files</a></li><li><a class="nav-link" href="../mobile-apps/rebranding-the-apps.html">Rebranding the Apps</a></li><li><a class="nav-link" href="../mobile-apps/admin-configurable-vs-rebuild.html">Admin-Configurable vs. Rebuild</a></li><li><a class="nav-link" href="../mobile-apps/building-android.html">Building Android (AAB)</a></li><li><a class="nav-link" href="../mobile-apps/building-ios.html">Building iOS (IPA)</a></li><li><a class="nav-link" href="../mobile-apps/play-store-submission.html">Play Store Submission</a></li><li><a class="nav-link" href="../mobile-apps/app-store-submission.html">App Store Submission</a></li><li><a class="nav-link" href="../mobile-apps/common-rejections.html">Common Rejections</a></li></ul></div><div class="docs-sidebar-group"><h3>Maintenance</h3><ul><li><a class="nav-link" href="../maintenance/updating-the-product.html">Updating the Product</a></li><li><a class="nav-link" href="../maintenance/changelog.html">Reading the Changelog</a></li><li><a class="nav-link" href="../maintenance/backup-restore.html">Backup &amp; Restore Around an Update</a></li><li><a class="nav-link" href="../maintenance/preserving-customizations.html">Preserving Customizations</a></li></ul></div><div class="docs-sidebar-group"><h3>Reference</h3><ul><li><a class="nav-link" href="../reference/api-overview.html">API Overview</a></li><li><a class="nav-link" href="../reference/settings-reference.html">Settings Reference</a></li><li><a class="nav-link" href="../reference/permissions-matrix.html">Permissions Matrix</a></li><li><a class="nav-link" href="../reference/troubleshooting-index.html">Troubleshooting Index</a></li><li><a class="nav-link" href="../reference/faq.html">FAQ</a></li><li><a class="nav-link" href="../reference/credits.html">Credits &amp;amp; Licenses</a></li></ul></div></nav>
+  <main class="docs-main"><p class="docs-breadcrumb"><a href="../index.html">Documentation</a> / Getting Started</p><article class="docs-content"><h1>Admin vs. Rebuild</h1><p class="docs-dek">What you can change from a panel, and what needs a code change — read this before you start customizing.</p><p>Every setting in this product falls into one of two buckets. Knowing which bucket something is
+in before you start saves you from either editing code unnecessarily, or hunting for a setting
+that was never going to exist as a toggle.</p>
+
+<table>
+<tr><th></th><th><span class="badge badge-admin">Admin</span></th><th><span class="badge badge-rebuild">Rebuild</span></th></tr>
+<tr><td>Where it lives</td><td>Admin → Settings, saved to the database, takes effect immediately</td><td>Source code / Flutter config files, needs a redeploy or app rebuild</td></tr>
+<tr><td>Who can change it</td><td>Any super-admin, anytime, no developer needed</td><td>Whoever manages your codebase</td></tr>
+<tr><td>Examples</td><td>Site name, logo, brand color, currencies, languages, payment gateway keys, commission rate, coupon rules, notification templates, CMS pages, homepage layout blocks</td><td>Mobile app icon/splash/package id, adding a new payment gateway, changing the checkout flow itself, custom report types</td></tr>
+</table>
+
+<h2 id="why-the-split-is-where-it-is">Why the split is where it is</h2>
+<p>The rule of thumb: if it's a <em>value</em> (text, a color, a key, a limit, which gateways are
+on), it's a setting. If it's <em>behavior</em> (a new step in checkout, a new kind of ticket
+rule, a new integration this product doesn't already support), it's code. The web side (site
+name/logo/colors/currencies/languages) is fully Admin-driven — see
+<a href="../operations/admin-tour.html">Admin tour</a> and the
+<a href="../reference/settings-reference.html">full settings reference</a>.</p>
+
+<h2 id="the-one-place-this-gets-more-involved-mobile-apps">The one place this gets more involved: mobile apps</h2>
+<p>The Flutter apps pull brand color, name, and logo from the server at runtime — same as the
+website. But an app's <strong>icon, splash screen, package id, and store listing</strong> are
+baked into the compiled binary; those require a rebuild. See
+<a href="../mobile-apps/admin-configurable-vs-rebuild.html">Mobile Apps → Admin-configurable vs.
+rebuild</a> for the exact list of which mobile values are which.</p>
+
+<div class="callout callout-note">
+<span class="callout-title">Rule of thumb</span>
+If you're not sure which bucket something falls in, check <a href="../reference/settings-reference.html">the
+settings reference</a> first — if it's not listed there, it's a code change.
+</div></article><nav class="docs-pagenav"><a class="prev" href="../getting-started/whats-in-the-box.html"><span class="dir">&larr; Previous</span>What&#039;s in the Box</a><a class="next" href="../installation/wizard-walkthrough.html"><span class="dir">Next &rarr;</span>Installation Wizard Walkthrough</a></nav></main>
+  <nav class="docs-toc"><h3>On this page</h3><ul><li><a href="#why-the-split-is-where-it-is">Why the split is where it is</a></li><li><a href="#the-one-place-this-gets-more-involved-mobile-apps">The one place this gets more involved: mobile apps</a></li></ul></nav>
+</div>
+<script src="../assets/docs.js"></script>
+</body>
+</html>
